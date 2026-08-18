@@ -3,11 +3,12 @@ import type { NextRequest } from "next/server";
 import { defaultLocale, isLocale, locales, localeCookieName } from "@/lib/i18n";
 
 function detectLocale(request: NextRequest): string {
+  // English is the front door: this portfolio is aimed at an international
+  // audience, so a first-time visitor always lands on /en regardless of
+  // browser language. Only an explicit choice via the switcher (stored as a
+  // cookie) sends someone somewhere else.
   const cookieLocale = request.cookies.get(localeCookieName)?.value;
   if (cookieLocale && isLocale(cookieLocale)) return cookieLocale;
-
-  const acceptLanguage = request.headers.get("accept-language");
-  if (acceptLanguage?.toLowerCase().includes("ko")) return "ko";
 
   return defaultLocale;
 }
@@ -25,8 +26,8 @@ export function proxy(request: NextRequest) {
   url.pathname = `/${locale}${pathname}`;
 
   const response = NextResponse.redirect(url);
-  // This redirect is per-visitor (cookie, then Accept-Language). On a CDN it
-  // would otherwise be cached and pin every later visitor to one locale.
+  // This redirect depends on the visitor's cookie. On a CDN it would
+  // otherwise be cached and pin every later visitor to one locale.
   response.headers.set("Cache-Control", "no-store");
   response.headers.set("Vary", "Accept-Language, Cookie");
   return response;

@@ -29,9 +29,7 @@ export const home: Record<Locale, HomeContent> = {
     name: "Yebeen (Bea) Kang",
     intro:
       [
-        "I'm drawn to products that stay connected to reality, and I want to widen the range of problems I can solve.",
-        "Five years as a PM across a 7M MAU commerce platform, a new platform launch in France, and a B2B2C SaaS product.",
-        "Lately I've been using AI to actively push out the boundary of what a single PM can cover.",
+        "I'm drawn to products that stay connected to reality, and I want to widen the range of problems I can solve. Five years as a PM across a 7M MAU commerce platform, a new platform launch in France, and a B2B2C SaaS product. Lately I've been using AI to actively push out the boundary of what a single PM can cover.",
       ],
     availability: "Based in Seoul, South Korea · Open to relocation",
     competencies: [
