@@ -7,6 +7,8 @@ export type HomeContent = {
   intro: string[];
   /** Location + relocation status, shown quietly under the contact links. */
   availability: string;
+  /** Hero link down to the project list. */
+  jumpToProjects: string;
   competencies: { title: string; body: string }[];
   experienceLabel: string;
   educationLabel: string;
@@ -32,6 +34,7 @@ export const home: Record<Locale, HomeContent> = {
         "I'm drawn to products that stay connected to reality, and I want to widen the range of problems I can solve. Five years as a PM across a 7M MAU commerce platform, a new platform launch in France, and a B2B2C SaaS product. Lately I've been using AI to actively push out the boundary of what a single PM can cover.",
       ],
     availability: "Based in Seoul, South Korea · Open to relocation",
+    jumpToProjects: "See the projects",
     competencies: [
       {
         title: "I understand the product, the user, and the business",
@@ -119,6 +122,7 @@ export const home: Record<Locale, HomeContent> = {
         "최근 AI를 통해 PM 1인이 커버할 수 있는 업무 경계를 적극적으로 확장하며 일하고 있습니다.",
       ],
     availability: "서울 거주 · 해외 이주 가능",
+    jumpToProjects: "프로젝트 보기",
     competencies: [
       {
         title: "제품과 사용자, 비즈니스를 이해합니다",

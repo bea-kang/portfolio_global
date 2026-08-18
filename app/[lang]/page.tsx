@@ -53,7 +53,7 @@ export default async function Home({
         <h1 className="mt-5 max-w-3xl text-5xl font-bold tracking-tight sm:text-6xl">
           {t.name}
         </h1>
-        <div className="mt-8 max-w-2xl space-y-3 text-xl leading-relaxed text-neutral-600">
+        <div className="mt-8 max-w-4xl space-y-3 text-xl leading-relaxed text-neutral-600">
           {t.intro.map((line) => (
             <p key={line}>{line}</p>
           ))}
@@ -75,6 +75,18 @@ export default async function Home({
           </a>
         </div>
         <p className="mt-3 text-sm text-neutral-400">{t.availability}</p>
+
+        {/* The header nav is quiet by design, so the hero states outright
+            that work sits further down and links straight to it. */}
+        <a
+          href="#projects"
+          className="group mt-10 inline-flex items-center gap-2 text-sm font-medium text-neutral-950"
+        >
+          {t.jumpToProjects}
+          <span className="transition-transform group-hover:translate-y-0.5">
+            ↓
+          </span>
+        </a>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 pb-16 pt-4">
@@ -99,7 +111,10 @@ export default async function Home({
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 pb-16 pt-8 sm:pb-24">
+      <section
+        id="projects"
+        className="mx-auto max-w-5xl scroll-mt-24 px-6 pb-16 pt-8 sm:pb-24"
+      >
         <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
           {t.projectsLabel}
         </h2>
