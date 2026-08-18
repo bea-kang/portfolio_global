@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { CaseNav } from "@/components/CaseNav";
 import { ProjectCard } from "@/components/ProjectCard";
 import { RichText } from "@/components/RichText";
 import { home } from "@/content/home";
@@ -77,16 +76,6 @@ export default async function Home({
         </div>
         <p className="mt-3 text-sm text-neutral-400">{t.availability}</p>
       </section>
-
-      <CaseNav
-        items={[
-          {
-            id: "experience",
-            title: `${t.experienceLabel}/${t.educationLabel}`,
-          },
-          { id: "projects", title: t.projectsLabel },
-        ]}
-      />
 
       <section className="mx-auto max-w-5xl px-6 pb-16 pt-4">
         <div className="grid gap-12 sm:grid-cols-2">
