@@ -7,7 +7,9 @@ import { useEffect, useState } from "react";
 export function CaseNav({
   items,
 }: {
-  items: { id: string; number: string; title: string }[];
+  /** `number` is optional: a page with a handful of named sections lists
+   * them by title alone. */
+  items: { id: string; number?: string; title: string }[];
 }) {
   const [activeId, setActiveId] = useState(items[0]?.id);
 
@@ -56,7 +58,9 @@ export function CaseNav({
                       : "text-neutral-400 hover:text-neutral-700"
                   }`}
                 >
-                  <span className="tabular-nums">{item.number}</span>{" "}
+                  {item.number && (
+                    <span className="tabular-nums">{item.number} </span>
+                  )}
                   {item.title}
                 </a>
               </li>
@@ -85,7 +89,9 @@ export function CaseNav({
                       : "text-neutral-400 hover:text-neutral-700"
                   }`}
                 >
-                  <span className="tabular-nums">{item.number}</span>{" "}
+                  {item.number && (
+                    <span className="tabular-nums">{item.number} </span>
+                  )}
                   {item.title}
                 </a>
               </li>

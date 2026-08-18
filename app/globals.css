@@ -17,3 +17,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Korean wraps character by character by default, which splits words
+   across lines ("있습 / 니다"). Break on spaces instead. */
+:lang(ko) {
+  word-break: keep-all;
+}
