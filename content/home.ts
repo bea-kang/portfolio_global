@@ -35,11 +35,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "I understand the product, the user, and the business",
-        body: "A platform creates business opportunity by defining and solving users' problems. When that understanding is thin, the product gets more complex and operations carry more weight. I go to users directly and talk to them. I close the gaps in understanding and define the problem precisely. From there I set the product's direction, fast.",
+        body: "A platform creates business opportunity by defining and solving users' problems. When that understanding is thin, it adds product complexity and operational load. I go to users directly, close the gaps in understanding, and define the problem precisely. From there I set the product's direction, fast.",
       },
       {
         title: "I look for my own lessons learned",
-        body: "A PM's job is to raise the quality of the product and of how the team works together. That means retrospecting on experience and finding what to improve. I've written up what I learned and what fell short after every project, and built a team habit of a biannual session where the team hears out what's working and what isn't, directly.",
+        body: "A PM has to raise the quality of both the product and the collaboration around it, which means retrospecting on experience and keeping the improvements coming. I wrote up what I learned and what fell short after every project, and built a team habit of retrospecting together.",
       },
     ],
     experienceLabel: "Experience",
@@ -47,7 +47,7 @@ export const home: Record<Locale, HomeContent> = {
     experience: [
       {
         org: "kakaostyle",
-        role: "Commerce Platform Planning / Product Owner",
+        role: "Commerce Platform Planning / Global Task Force",
         period: "Jul 2022–Mar 2026",
       },
       { org: "methinks", role: "Product Manager", period: "Jan 2021–Jan 2022" },
@@ -121,11 +121,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "제품과 사용자, 비즈니스를 이해합니다",
-        body: "플랫폼은 사용자의 문제를 정의하고 해결해서 비즈니스 기회를 만듭니다. 이해도가 낮을 경우 제품 복잡도를 높이고, 운영 부담을 늘립니다. 저는 사용자를 직접 찾아 이야기 합니다. 이해도를 맞추고 문제를 명확하게 정의합니다. 높은 이해를 기반으로 빠르게 제품 방향을 정합니다.",
+        body: "플랫폼은 사용자의 문제를 정의하고 해결해서 비즈니스 기회를 만듭니다. 이해도가 낮을 경우 제품 복잡도와 운영 부담을 늘립니다. 저는 사용자를 직접 찾아 이해도를 맞추고 문제를 명확하게 정의합니다. 높은 이해를 기반으로 빠르게 제품 방향을 정합니다.",
       },
       {
         title: "스스로 레슨런을 찾습니다",
-        body: "PO의 숙제는 제품과 협업 과정의 질을 높이는 것입니다. 경험을 회고하고 개선점을 찾아 만들 수 있습니다. 프로젝트마다 배운점과 아쉬운 점을 스스로 정리했습니다. 반기별로 세션을 열어 팀원과 좋은 점, 아쉬운 점을 청취하는 업무 문화를 만들었습니다.",
+        body: "PM은 제품, 협업의 질을 높여야 합니다. 경험을 회고하며 개선점을 찾아 나가야 합니다. 프로젝트마다 배운점, 아쉬운 점을 스스로 정리했고, 팀원과 회고하는 업무 문화를 만들었습니다.",
       },
     ],
     experienceLabel: "경력",
@@ -133,7 +133,7 @@ export const home: Record<Locale, HomeContent> = {
     experience: [
       {
         org: "kakaostyle (카카오스타일)",
-        role: "커머스플랫폼기획 / PO",
+        role: "커머스 플랫폼 기획 / 글로벌 TF",
         period: "2022.07–2026.03",
       },
       { org: "methinks", role: "PM", period: "2021.01–2022.01" },
