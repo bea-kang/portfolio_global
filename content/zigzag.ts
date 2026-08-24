@@ -46,7 +46,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "Operating headcount", value: "5+ / team → 0" },
       ],
       lesson: [
-        "Product quality comes from iterating against users and metrics, not from a single launch. Shipping fast and fixing repeatedly, rather than shipping perfect, is what let the program expand into influencer seeding.",
+        "Product quality comes from iterating against users and metrics, not from a single launch. Shipping fast and fixing repeatedly, rather than shipping perfect, is what let the program expand into influencer seeding and an internal-employee segment.",
       ],
       media: [
         {
@@ -268,7 +268,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "운영 인력", value: "조직당 5명 이상 → 0명" },
       ],
       lesson: [
-        "제품 완성도는 한 번의 출시가 아니라 사용자·지표 기반 이터레이션에서 나옵니다. 완벽하게 내놓는 것보다 빠르게 내고 반복해서 고치는 쪽을 택했고, 그 결과 광고 인플루언서 협찬으로 확장할 수 있었습니다.",
+        "제품 완성도는 한 번의 출시가 아니라 사용자·지표 기반 이터레이션에서 나옵니다. 완벽하게 내놓는 것보다 빠르게 내고 반복해서 고치는 쪽을 택했고, 그 결과 광고 인플루언서 협찬과 사내 직원 타깃으로 확장할 수 있었습니다.",
       ],
       media: [
         {

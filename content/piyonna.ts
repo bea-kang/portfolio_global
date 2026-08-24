@@ -106,7 +106,7 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         title: "Outcome",
         blocks: [
           {
-            p: "The product designer, engineer, localization lead, and merchandisers all worked off these two systems.",
+            p: "The product designer, engineer, localization specialist, and merchandisers all worked off these two systems.",
           },
           {
             p: "The platform launched inside the three-month target and is live.",
