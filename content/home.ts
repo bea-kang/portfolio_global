@@ -47,7 +47,7 @@ export const home: Record<Locale, HomeContent> = {
     experience: [
       {
         org: "kakaostyle",
-        role: "Commerce Platform Planning / Global Task Force",
+        role: "Commerce Platform Planning / Global TF",
         period: "Jul 2022–Mar 2026",
       },
       { org: "methinks", role: "Product Manager", period: "Jan 2021–Jan 2022" },
