@@ -106,17 +106,17 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         title: "Outcome",
         blocks: [
           {
-            p: "Five people worked off these two systems: the French localization lead, a product designer, an engineer, and two merchandisers handling pricing and category checks. Anything that fell between defined roles, I absorbed.",
+            p: "The product designer, engineer, localization lead, and merchandisers all worked off these two systems.",
           },
           {
-            p: "The platform launched within the three-month window and is live.",
+            p: "The platform launched inside the three-month target and is live.",
           },
         ],
       },
     ],
-    lessonLabel: "What I'd take from it",
+    lessonLabel: "Lesson learned",
     lesson: [
-      "Three months with no domain knowledge forces you to decide what you are not going to learn. The interviews were narrow on purpose. The bet was that positioning and price would carry a first launch, and that everything else could be corrected after real traffic.",
+      "A PM's job no longer stops at writing specs and running the project. The path to launch is full of gray zones nobody owns, and spotting them and acting on them is what matters now. As AI tools improve, the range one person can actually execute has widened with them. On this project, the work that fell outside anyone's role is work I found and handled myself.",
     ],
     liveCaption: "Live creative from piyonna.com, the storefront after launch.",
     liveCta: "Visit piyonna.com ↗",

@@ -46,7 +46,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "Operating headcount", value: "5+ / team → 0" },
       ],
       lesson: [
-        "Product maturity comes from repeated iteration against users and metrics, not a single launch. The program has since expanded into influencer seeding and an internal-employee segment, proof that shipping fast and iterating, not shipping perfect, is what compounds.",
+        "Product quality comes from iterating against users and metrics, not from a single launch. Shipping fast and fixing repeatedly, rather than shipping perfect, is what let the program expand into influencer seeding.",
       ],
       media: [
         {
@@ -92,7 +92,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "CTR came in low, read as weak initial framing and incentive, but the lift in payment per order (about ₩2,000) outweighed the rise in coupon cost per order (about ₩1,000) in the test group.",
       lesson: [
-        "Maker buy-in decides how fast and how far an experiment goes. Early pushback from the owner responsible for checkout and design meant the final UX shipped more conservative than intended, and a variable outside the product's control (coupon budget) kept forcing the test to extend instead of scale. Both now shape how I scope experiments: agree the guardrails before build, and win the room before writing a line of it.",
+        "Maker buy-in decides how fast and how far an experiment goes. Winning over an owner worried about checkout usability took time, so the final UX shipped more conservative than intended, and coupon budget, a variable outside the product's control, kept the test extending instead of scaling. Now I settle the guardrails on what I cannot control and win the room before build starts.",
       ],
       media: [
         {
@@ -115,7 +115,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "Freed up MD, finance, and product time previously spent on compensation and cleanup.",
       lesson: [
-        "Knowing the seller and AMD workflow cold, before, during, and after coupon creation, is what let the process come together quickly. An admin tool built from watching the actual work, not assumptions, is what saves users time. That's the habit I try to keep: go find the user yourself.",
+        "Knowing the seller and AMD workflow before, during, and after coupon creation is what let the process come together quickly. An admin built from watching the actual work, not from assumptions, is what saves users time. I still go find the user myself.",
       ],
       media: [
         {
@@ -146,7 +146,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "Items per order", value: "2.3 → 3.2" },
       ],
       lesson: [
-        "The follow-up usability work stalled: testing showed it cost more than it returned, so it never shipped, meaning the structural fix landed but its reach stayed capped. The gap: company-wide cost targets and the product's own usage target were pulling in different directions. I've since made a habit of checking that alignment with team and leadership repeatedly through a project, not just at kickoff.",
+        "The follow-up usability work never shipped: the A/B test showed it cost more than it returned. The structural fix landed but its reach stayed capped, because company-wide cost targets and the product's own usage target pointed in opposite directions. Now I check that alignment with the team and leadership throughout a project, not once at kickoff.",
       ],
       media: [
         {
@@ -175,7 +175,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "Repeat-purchase rate", value: "2.8% → 5.8%" },
       ],
       lesson: [
-        "Cross-team alignment starts with getting everyone to the same understanding of the goal, background, and impact, not just the ask. With display and backend split across teams with different priorities, misaligned understanding shows up directly in quality and timeline. I ran a weekly sync and kept sharing target metrics and rollout status company-wide, through launch and after, a habit I've kept since.",
+        "Collaboration starts by aligning on the product's purpose, background, and impact. With display and backend split across teams, priorities differ, and that gap shows up directly in quality and timeline. I use a weekly sync to share target metrics and rollout plans, and to stay in sync with makers on how much the product matters.",
       ],
       media: [
         {
@@ -203,7 +203,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
       lesson: [
         "A pricing feature that ships with a config error turns into cancelled orders, settlement correction, and compensation, fast. For two weeks post-launch, I tracked company-wide support keywords daily and reviewed them each morning with the team to catch issues early.",
-        "Separately, a database migration required a 1–2 hour write freeze, communicated in advance, but a missed cache/traffic test meant a same-day rollback of every affected feature and a 3-week delay renegotiating the freeze window. Even a \"purely technical\" risk is worth double-checking with engineering one more time before it ships. That's stayed with me since.",
+        "A database migration required a 1–2 hour write freeze, communicated in advance, but a missed cache/traffic test meant a same-day rollback of every affected feature and a three-week delay renegotiating the window. Even a \"purely technical\" risk is worth one more check with engineering before it ships.",
       ],
       media: [
         {
@@ -234,7 +234,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "Caught buyers using deferred payment methods to lock in quantity ahead of checkout and shipped a fix the same day the campaign went live; surfaced issuance history and policy in the coupon wallet after a spike in \"this is just for traffic\" complaints as the coupon ran low.",
       lesson: [
-        "During the two-week Black Friday run, roughly 100+ VOC threads on day one dropped to zero by responding with speed, not avoidance. Reviewing an unfiltered VOC sheet every morning for two straight weeks, categorizing each by root cause, and pushing same-day fixes is where I learned that showing up for the complaint queue every day is its own skill.",
+        "During the two-week Black Friday run, 100+ VOC threads on day one dropped to zero. Every morning I read the unfiltered VOC sheet myself, sorted each case by root cause — product policy, missing on-screen information, stability — and pushed same-day fixes with the team. Checking every day instead of putting it off is its own skill.",
       ],
       media: [
         {
@@ -268,7 +268,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "운영 인력", value: "조직당 5명 이상 → 0명" },
       ],
       lesson: [
-        "제품 완성도는 사용자 및 지표 기반 이터레이션의 반복에서 나옵니다. 긴 호흡의 개선으로 제품 안정화와 확장성 있는 플랫폼을 만들 수 있었습니다. 이후 광고 인플루언서 협찬으로 확장하고, 사내 직원 타깃 확장도 진행 중입니다. 완벽하게 출시하는 것보다 빠르게 제공하고 반복 개선하는 과정이 완성도를 좌우한다는 것을 체득했습니다.",
+        "제품 완성도는 한 번의 출시가 아니라 사용자·지표 기반 이터레이션에서 나옵니다. 완벽하게 내놓는 것보다 빠르게 내고 반복해서 고치는 쪽을 택했고, 그 결과 광고 인플루언서 협찬으로 확장할 수 있었습니다.",
       ],
       media: [
         {
@@ -312,7 +312,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "최초 정보 소구·동기 부여 부족으로 CTR은 낮은 편이었으나, 실험군 쿠폰 비용 상승폭(건당 평균 1천원) 대비 건당 결제액 상승폭(건당 평균 2천원)이 우세했습니다.",
       lesson: [
-        "메이커의 공감이 실험 속도와 완성도를 좌우합니다. 결제 사용성과 전환에 미칠 영향을 우려한 메이커가 초기에 반대 의견을 보였고, 이를 설득하는 과정에서 시간이 소모되어 최종 UX는 초기 구상보다 소극적으로 구현됐습니다. 또한 쿠폰 비용이라는, 제품 통제 밖의 변수 때문에 실험을 100% 확대하지 못하고 연장을 반복했습니다. 이후로는 통제할 수 없는 요소를 사전에 가드레일로 정리하고, 빌드에 들어가기 전 메이커의 공감을 먼저 얻는 것을 원칙으로 삼습니다.",
+        "메이커의 공감이 실험 속도와 완성도를 좌우합니다. 결제 사용성을 우려한 메이커를 설득하는 데 시간이 들면서 최종 UX는 초기 구상보다 소극적으로 구현됐고, 쿠폰 비용이라는 통제 밖 변수 때문에 실험을 확대하지 못하고 연장만 반복했습니다. 이후로는 빌드에 들어가기 전에 통제할 수 없는 요소를 가드레일로 정리하고 메이커의 공감을 먼저 얻습니다.",
       ],
       media: [
         {
@@ -334,7 +334,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       results: [{ label: "오발행 비중", value: "−90%" }],
       resultsNote: "MD, 재무, 제품팀의 리소스를 절감했습니다.",
       lesson: [
-        "쿠폰 생성 전·중·후의 셀러·AMD 업무 과정을 100% 인지하고 있었기에 전반적인 프로세스를 빠르게 확립할 수 있었습니다. 가설이 아닌 현장을 기반으로 구성한 어드민이 사용자의 업무 효율로 이어진다는 것, 그리고 플랫폼은 사용자와 현장에 닿아 있어야 한다는 것을 다시 확인했습니다. 스스로 사용자를 찾아가는 업무 습관을 지금도 유지하고 있습니다.",
+        "쿠폰 생성 전·중·후의 셀러·AMD 업무를 모두 알고 있었기 때문에 프로세스를 빠르게 확립할 수 있었습니다. 가설이 아니라 현장을 보고 만든 어드민이 사용자의 업무 효율로 이어집니다. 지금도 사용자를 직접 찾아갑니다.",
       ],
       media: [
         {
@@ -365,7 +365,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "평균 주문 상품 수", value: "2.3개 → 3.2개" },
       ],
       lesson: [
-        "후속 사용성 개선 과제는 ABT 결과 비용 손실로 이어져 결국 운영이 어려워 배포하지 못했습니다. 구조적인 개선은 만들었지만 영향력을 확대하진 못한 셈입니다. 전사의 비용 지표와 제품의 사용 지표가 상충되는 상황이었고, 이후로는 전사 지표와 제품 목표 지표의 정렬을 팀·리더와 프로젝트 내내 여러 차례 점검하고 있습니다.",
+        "후속 사용성 개선은 ABT에서 비용 손실이 확인돼 배포하지 못했습니다. 구조는 만들었지만 영향력은 넓히지 못한 셈인데, 전사의 비용 지표와 제품의 사용 지표가 서로 반대 방향을 향하고 있었습니다. 이후로는 전사 지표와 제품 목표의 정렬을 킥오프 때 한 번이 아니라 프로젝트 내내 팀·리더와 점검합니다.",
       ],
       media: [
         {
@@ -391,7 +391,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         { label: "재구매 비중", value: "2.8% → 5.8%" },
       ],
       lesson: [
-        "협업은 제품 목적과 배경, 영향도에 대한 이해를 일치시키는 데서 시작합니다. 전시-백엔드가 분리된 조직 특성상 팀별 우선순위와 업무가 달라, 이해도 차이가 완성도와 일정에 직접 영향을 줍니다. Weekly 미팅을 구성하고 전사 기대 지표와 운영 방안을 주기적으로 공유했으며, 프로젝트 완료 후에도 지표 공유를 반복하는 습관을 지금까지 유지하고 있습니다.",
+        "협업은 제품의 목적과 배경, 영향도에 대한 이해를 맞추는 데서 시작합니다. 전시와 백엔드가 분리된 조직이라 팀별 우선순위가 다르고, 그 차이가 완성도와 일정에 그대로 나타납니다. Weekly 미팅에서 기대 지표와 운영 방안을 공유하며 메이커와 제품 중요도를 싱크하기 위해 노력합니다.",
       ],
       media: [
         {
@@ -416,7 +416,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
       lesson: [
         "가격 기능은 설정 오류 시 주문 취소 → 정산 보정 → 보상 운영으로 이어지는 문제입니다. 배포 후 2주간 전사 채널 키워드를 매일 확인하고 오전 미팅으로 팀에 공유해 해결 필요건을 빠르게 식별했습니다.",
-        "별개로, 데이터 DB 이관을 위해 사전 공지한 1-2시간 쓰기 제한이 있었는데, 캐시 트래픽 테스트 누락으로 배포 당일 영향 서비스의 모든 기능을 롤백해야 했고 재협의로 3주간 지연이 발생했습니다. '순수 기술적인' 리스크라도 배포 전에 개발자와 한 번 더 점검하는 습관의 필요성을 그때 배웠고, 지금도 유지하고 있습니다.",
+        "데이터 DB 이관을 위해 1-2시간 쓰기 제한을 사전 공지했는데, 캐시 트래픽 테스트가 누락돼 배포 당일 영향 서비스의 기능을 전부 롤백하고 재협의로 3주가 밀렸습니다. '순수 기술적인' 리스크라도 배포 전에 개발자와 한 번 더 점검하는 습관의 필요성을 배웠습니다.",
       ],
       media: [
         {
@@ -447,7 +447,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "후불 결제 수단(무통장, 편의점)으로 수량을 선점하는 케이스를 확인해 이벤트 당일 반영했고, 쿠폰 소진 속도로 인한 '트래픽용 운영' 클레임이 누적되자 쿠폰함과 쿠폰 정책 내역에 발급 이력·정책을 노출해 즉각 대응했습니다.",
       lesson: [
-        "블랙 프라이데이 2주간, 초기 100건 이상 발생하던 VOC 빈도를 속도 있는 대응으로 0건까지 낮췄습니다. 매일 정제되지 않은 VOC 시트를 오전에 리뷰하며 제품 정책, 화면 정보 부족, 안정성으로 원인을 분류하고 일단위로 팀에 공유·요청·수정하는 2주를 보내며, 클레임 큐에 매일 나타나는 것 자체가 하나의 역량이라는 걸 배웠습니다.",
+        "블랙 프라이데이 2주 동안 초기 100건 이상이던 VOC를 0건까지 낮췄습니다. 매일 아침 정제되지 않은 VOC 시트를 직접 읽고 원인을 제품 정책·화면 정보 부족·안정성으로 나눈 뒤, 일단위로 팀에 공유하고 수정했습니다. 미루지 않고 매일 확인하는 것 자체가 역량이라는 걸 배웠습니다.",
       ],
       media: [
         {
