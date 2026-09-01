@@ -50,8 +50,12 @@ export default async function ZigzagPage({
         }))}
       />
 
+      {/* In print, every case after the first starts its own page. */}
       {cases.map((c, i) => (
-        <div key={c.number}>
+        <div
+          key={c.number}
+          className={i > 0 ? "print:break-before-page" : undefined}
+        >
           <div
             id={caseId(c.number)}
             className="mx-auto max-w-3xl scroll-mt-32 px-6 pt-8"

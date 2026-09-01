@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Nav } from "@/components/Nav";
+import { ui } from "@/content/ui";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { EMAIL, LINKEDIN_LABEL, LINKEDIN_URL } from "@/lib/profile";
 import "../globals.css";
@@ -17,6 +18,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+/** Written by `npm run pdf`; the filename is what a recruiter sees on the
+ * downloaded file, so it carries the name rather than the route. */
+const PDF_HREF: Record<Locale, string> = {
+  en: "/Yebeen-Kang-Portfolio-EN.pdf",
+  ko: "/Yebeen-Kang-Portfolio-KO.pdf",
+};
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -59,6 +67,16 @@ export default async function RootLayout({
             </Link>
             <div className="flex items-center gap-6">
               <Nav lang={lang} />
+              {/* Some applications take a file but no link, so the whole
+                  site is also kept as a pre-rendered PDF (`npm run pdf`). */}
+              <a
+                href={PDF_HREF[lang]}
+                download
+                title={ui[lang].pdfCta}
+                className="text-sm text-neutral-500 transition-colors hover:text-neutral-950"
+              >
+                PDF
+              </a>
               <LanguageSwitcher current={lang} />
             </div>
           </div>

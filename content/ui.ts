@@ -16,6 +16,7 @@ export const ui: Record<Locale, UiDict> = {
     referencesLabel: "Coverage",
     lessonLabel: "Lesson learned",
     emailCta: "garding3@gmail.com",
+    pdfCta: "Download as PDF",
   },
   ko: {
     nav: {
@@ -31,5 +32,6 @@ export const ui: Record<Locale, UiDict> = {
     referencesLabel: "관련 링크",
     lessonLabel: "레슨런",
     emailCta: "garding3@gmail.com",
+    pdfCta: "PDF로 내려받기",
   },
 };

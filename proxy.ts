@@ -34,7 +34,8 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/((?!_next/static|_next/image|images/|favicon.ico|.*\\.png$|.*\\.svg$).*)",
-  ],
+  // Pages only. Anything with a file extension is an asset served straight
+  // from /public — screenshots, the favicon, the portfolio PDFs — and a
+  // locale prefix would send it to a route that does not exist.
+  matcher: ["/((?!_next/|.*\\.[a-zA-Z0-9]+$).*)"],
 };

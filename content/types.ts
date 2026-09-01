@@ -26,4 +26,5 @@ export type UiDict = {
   referencesLabel: string;
   lessonLabel: string;
   emailCta: string;
+  pdfCta: string;
 };

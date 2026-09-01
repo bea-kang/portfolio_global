@@ -30,7 +30,7 @@ export function ProjectCard({
         <p className="mt-1 text-sm text-neutral-400">{period}</p>
         <p className="mt-4 text-neutral-600">{blurb}</p>
       </div>
-      <span className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-950">
+      <span className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-950 print:hidden">
         {cta}
         <span className="transition-transform group-hover:translate-x-1">
           →

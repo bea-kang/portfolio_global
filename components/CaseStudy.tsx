@@ -243,7 +243,9 @@ export function LiveGallery({
 
 /** Supporting screenshots, sized as reference material: they follow the
  * results rather than interrupting them. Capped at two per row — these are
- * dense admin/app captures, and three across is too small to read. */
+ * dense admin/app captures, and three across is too small to read. In print
+ * the column is narrower than any screen the site was designed for, so they
+ * drop to one per row rather than shrink to illegible. */
 export function RefShots({
   shots,
 }: {
@@ -255,7 +257,7 @@ export function RefShots({
         className={
           shots.length === 1
             ? "mx-auto max-w-2xl"
-            : "grid gap-4 sm:grid-cols-2"
+            : "grid gap-4 sm:grid-cols-2 print:grid-cols-1"
         }
       >
         {shots.map((shot) => (
