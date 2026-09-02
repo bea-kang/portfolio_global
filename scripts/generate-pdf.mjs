@@ -1,5 +1,5 @@
 /**
- * Renders /<lang>/print to a PDF, so the portfolio can be attached to
+ * Renders /<lang>/deck to a PDF, so the portfolio can be attached to
  * applications that only take a file upload.
  *
  *   npm run pdf            # needs the site running on PORT (default 3000)
@@ -8,6 +8,11 @@
  * pulling in Puppeteer: the only thing this needs beyond `--print-to-pdf`
  * is control over paper size and background printing, and CDP gives that
  * for the cost of one WebSocket.
+ *
+ * Paper is 20 x 11.25in, which is 1920 x 1080 CSS px at 96dpi, so a slide
+ * built at those dimensions prints one-to-one with no scaling. Any slide
+ * whose content outgrows that box is reported rather than silently
+ * cropped — the page box cannot grow, so an overflow is a content edit.
  */
 import { spawn } from "node:child_process";
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
@@ -19,6 +24,8 @@ const CHROME =
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const ORIGIN = `http://127.0.0.1:${process.env.PORT ?? 3000}`;
 const PORT = 9333;
+const SLIDE_W = 1920;
+const SLIDE_H = 1080;
 
 const TARGETS = [
   { lang: "ko", file: "public/Yebeen-Kang-Portfolio-KO.pdf" },
@@ -81,8 +88,17 @@ async function render(target, lang, file) {
   await cdp.ready;
   await cdp.send("Page.enable");
 
+  // Lay the page out at slide width so the measurement below sees the
+  // same box the printer will.
+  await cdp.send("Emulation.setDeviceMetricsOverride", {
+    width: SLIDE_W,
+    height: SLIDE_H,
+    deviceScaleFactor: 1,
+    mobile: false,
+  });
+
   const loaded = cdp.once("Page.loadEventFired");
-  await cdp.send("Page.navigate", { url: `${ORIGIN}/${lang}/print` });
+  await cdp.send("Page.navigate", { url: `${ORIGIN}/${lang}/deck` });
   await loaded;
 
   // The load event fires before webfonts swap in and before lazily
@@ -98,10 +114,27 @@ async function render(target, lang, file) {
   });
   await sleep(500);
 
+  const { result } = await cdp.send("Runtime.evaluate", {
+    returnByValue: true,
+    expression: `[...document.querySelectorAll(".deck-slide")].flatMap((el, i) => {
+      const over = el.scrollHeight - ${SLIDE_H};
+      return over > 1 ? [{ slide: i + 1, over }] : [];
+    })`,
+  });
+  for (const { slide, over } of result.value) {
+    console.warn(`  ! slide ${slide} overflows by ${over}px`);
+  }
+
   const { data } = await cdp.send("Page.printToPDF", {
     printBackground: true,
-    preferCSSPageSize: true,
+    preferCSSPageSize: false,
     generateDocumentOutline: true,
+    paperWidth: SLIDE_W / 96,
+    paperHeight: SLIDE_H / 96,
+    marginTop: 0,
+    marginBottom: 0,
+    marginLeft: 0,
+    marginRight: 0,
   });
   await writeFile(file, Buffer.from(data, "base64"));
   cdp.close();

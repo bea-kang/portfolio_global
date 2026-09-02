@@ -24,11 +24,10 @@ body {
   word-break: keep-all;
 }
 
-/* Printing (and `npm run pdf`, which drives headless Chrome over the same
-   stylesheet). The screen layout carries a lot of chrome that has nowhere
-   to go on a fixed page — sticky bars, a floating table of contents, links
-   that say "read more" — so print strips it and tightens the vertical
-   rhythm that was tuned for scrolling. */
+/* Printing a page of the site directly (⌘P). The scroll layout carries
+   chrome that has nowhere to go on a fixed page — sticky bars, a floating
+   table of contents, links that say "read more" — so print strips it. The
+   portfolio PDF is not made this way; see app/[lang]/deck. */
 @media print {
   body > header,
   body > footer,
@@ -49,19 +48,7 @@ body {
     break-after: avoid;
   }
 
-  /* Each case in the Zigzag write-up starts a fresh page, so the rule that
-     separates them on screen has nothing left to separate. */
-  .print-doc hr {
-    display: none;
-  }
-
-  /* A page break already supplies the breathing room the scroll layout
-     was padding in by hand. */
-  .print-doc header {
-    padding-top: 0;
-  }
-
-  .print-doc a[target="_blank"] {
+  a[target="_blank"] {
     text-decoration: none;
   }
 }
