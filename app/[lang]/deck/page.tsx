@@ -231,25 +231,21 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
   // ── 2. Piyonna ──────────────────────────────────────────────────────
   opener("piyonna", "3", py);
 
-  // In the order the work happened: why the business existed and how the
-  // MVP was cut, then what the interviews said to win on and what got
-  // built to do it. The selling points are the output of action 1, so
-  // they follow it rather than opening the case.
+  // Why the business existed, on its own; then the research and what it
+  // concluded together, because the selling points are the output of
+  // action 1 rather than a heading of their own.
   push({
     render: (page) => (
       <Slide key="py-1" page={page}>
         <SlideHead eyebrow={py.eyebrow} title={py.title} period={py.meta} />
-        <SlideBody
-          asideAlign="start"
-          aside={
-            <Block label={py.sections[PY.research].title}>
-              <Blocks blocks={py.sections[PY.research].blocks} />
+        <SlideBody>
+          {/* Held to the width of a two-column slide's text side, so the
+              lines read the same length as everywhere else in the deck. */}
+          <div className="max-w-[800px]">
+            <Block label={py.sections[PY.background].title}>
+              <Blocks blocks={py.sections[PY.background].blocks} />
             </Block>
-          }
-        >
-          <Block label={py.sections[PY.background].title}>
-            <Blocks blocks={py.sections[PY.background].blocks} />
-          </Block>
+          </div>
         </SlideBody>
       </Slide>
     ),
@@ -267,6 +263,9 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
             </Block>
           }
         >
+          <Block label={py.sections[PY.research].title}>
+            <Blocks blocks={py.sections[PY.research].blocks} />
+          </Block>
           <Block label={py.sections[PY.selling].title}>
             <Blocks blocks={py.sections[PY.selling].blocks} />
           </Block>

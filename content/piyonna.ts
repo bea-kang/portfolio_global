@@ -106,17 +106,14 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         title: "Outcome",
         blocks: [
           {
-            p: "The product designer, engineer, localization specialist, and merchandisers all worked off these two systems.",
-          },
-          {
-            p: "The platform launched inside the three-month target and is live.",
+            p: "Sharpening the acquisition funnel and the MVP got the platform launched inside the three-month ETA, and it is running now.",
           },
         ],
       },
     ],
     lessonLabel: "Lesson learned",
     lesson: [
-      "A PM's job no longer stops at writing specs and running the project. The path to launch is full of gray zones nobody owns, and spotting them and acting on them is what matters now. As AI tools improve, the range one person can actually execute has widened with them. On this project, the work that fell outside anyone's role is work I found and handled myself.",
+      "Spotting the grey zones on the way to launch and working through them myself is what shrank the line around my own job. AI keeps widening what a single PM can cover, so when the product's goal needs it, I would rather execute across that line than stop at it.",
     ],
     liveCaption: "Live creative from piyonna.com, the storefront after launch.",
     liveCta: "Visit piyonna.com ↗",
@@ -205,15 +202,14 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         title: "결과",
         blocks: [
           {
-            p: "두 시스템을 기반으로 PD, 엔지니어, 로컬라이제이션 담당자, MD가 활용했습니다.",
+            p: "유입 퍼널과 MVP를 구체화해 목표 ETA인 3개월 안에 런칭했고, 현재 운영 중입니다.",
           },
-          { p: "플랫폼은 목표 기간 3개월 내 런칭, 현재 운영 중입니다." },
         ],
       },
     ],
     lessonLabel: "레슨런",
     lesson: [
-      "PM은 더 이상 기획하고 프로젝트를 관리하는 역할에 머물지 않습니다. 런칭까지 가는 길에는 누가 맡아야 할지 정해지지 않은 그레이존이 훨씬 많고, 그것을 먼저 인식해 직접 실행하는 역량이 중요해졌습니다. AI 도구가 발전하면서 한 사람이 실행할 수 있는 범위도 그만큼 넓어졌습니다. 이 프로젝트에서 역할이 나뉘지 않은 일은 제가 찾아서 처리했습니다.",
+      "PM으로서 런칭까지의 그레이존을 먼저 인식하고 직접 실행하면서, 업무의 경계를 줄여 나간 경험입니다. AI 기술과 함께 PM의 커버리지도 확장되는 만큼, 프로덕트의 목표를 위해 경계 없이 빠르게 실행하겠습니다.",
     ],
     liveCaption: "런칭 후 실제 스토어 piyonna.com의 라이브 크리에이티브입니다.",
     liveCta: "piyonna.com 방문하기 ↗",
