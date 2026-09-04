@@ -231,6 +231,36 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
   // ── 2. Piyonna ──────────────────────────────────────────────────────
   opener("piyonna", "3", py);
 
+  // The storefront that came out of all this, shown next to the reason it
+  // was built. The link is live in the PDF: Chrome keeps anchors as real
+  // link annotations, so a reader can click through from the page.
+  const liveStorefront = (
+    <div className="flex min-h-0 flex-col justify-center gap-[16px]">
+      <div className="grid grid-cols-3 gap-[14px]">
+        {LIVE_IMAGES.map((img) => (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            key={img.src}
+            src={img.src}
+            alt={img.alt}
+            className="w-full rounded-[14px] border border-neutral-200 object-contain"
+          />
+        ))}
+      </div>
+      <p className="text-center text-[19px] leading-snug text-neutral-400">
+        {py.liveCaption}
+      </p>
+      <p className="text-center">
+        <a
+          href="https://piyonna.com"
+          className="text-[21px] text-neutral-700 underline decoration-neutral-300 underline-offset-4"
+        >
+          {py.liveCta}
+        </a>
+      </p>
+    </div>
+  );
+
   // Why the business existed, on its own; then the research and what it
   // concluded together, because the selling points are the output of
   // action 1 rather than a heading of their own.
@@ -238,14 +268,10 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
     render: (page) => (
       <Slide key="py-1" page={page}>
         <SlideHead eyebrow={py.eyebrow} title={py.title} period={py.meta} />
-        <SlideBody>
-          {/* Held to the width of a two-column slide's text side, so the
-              lines read the same length as everywhere else in the deck. */}
-          <div className="max-w-[800px]">
-            <Block label={py.sections[PY.background].title}>
-              <Blocks blocks={py.sections[PY.background].blocks} />
-            </Block>
-          </div>
+        <SlideBody asideAlign="start" aside={liveStorefront}>
+          <Block label={py.sections[PY.background].title}>
+            <Blocks blocks={py.sections[PY.background].blocks} />
+          </Block>
         </SlideBody>
       </Slide>
     ),
@@ -278,30 +304,15 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
     render: (page) => (
       <Slide key="py-3" page={page}>
         <SlideHead eyebrow={py.eyebrow} title={py.title} period={py.meta} />
-        <SlideBody
-          aside={
-            <div className="flex min-h-0 flex-col justify-center gap-[16px]">
-              <div className="grid grid-cols-3 gap-[14px]">
-                {LIVE_IMAGES.map((img) => (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img
-                    key={img.src}
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full rounded-[14px] border border-neutral-200 object-contain"
-                  />
-                ))}
-              </div>
-              <p className="text-center text-[19px] leading-snug text-neutral-400">
-                {py.liveCaption}
-              </p>
-            </div>
-          }
-        >
-          <Block label={py.sections[PY.results].title}>
-            <Blocks blocks={py.sections[PY.results].blocks} />
-          </Block>
-          <DeckLesson label={py.lessonLabel} paragraphs={py.lesson} />
+        <SlideBody>
+          <div className="max-w-[1100px]">
+            <Block label={py.sections[PY.results].title}>
+              <Blocks blocks={py.sections[PY.results].blocks} />
+            </Block>
+          </div>
+          <div className="max-w-[1100px]">
+            <DeckLesson label={py.lessonLabel} paragraphs={py.lesson} />
+          </div>
         </SlideBody>
       </Slide>
     ),
