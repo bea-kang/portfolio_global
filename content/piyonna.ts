@@ -64,13 +64,13 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
               {
                 text: "**Prove that real Koreans use these products.**",
                 sub: [
-                  "French shoppers wanted to confirm whether a product was genuinely popular with locals. We decided to process and surface the user reviews accumulated on Zigzag.",
+                  "French shoppers wanted proof that Koreans really use the product and that it is popular there. We processed the user reviews accumulated on Zigzag and used them as the hook on the product detail page.",
                 ],
               },
               {
                 text: "**Hold a price advantage over competitors.**",
                 sub: [
-                  "For the initial entry we bought inventory, so margin was ours to set. The strategy was to price below competitors, even by a dollar.",
+                  "Shoppers were price-sensitive: the products already cost more than local ones before shipping was added. The strategy was to land a selling price below competitors.",
                 ],
               },
             ],
@@ -160,13 +160,13 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
               {
                 text: "**실제 한국인이 쓰는 제품을 증명한다.**",
                 sub: [
-                  "프랑스 소비자는 진짜 현지인에게 인기가 많은지를 확인하고 싶어 했습니다. 지그재그에 축적된 사용자 리뷰를 가공해 노출하도록 의사결정했습니다.",
+                  "프랑스 소비자는 진짜 현지인이 사용하는, 인기 있는 제품인가를 증명하기 원했습니다. 지그재그에 축적된 사용자 리뷰를 가공해 PDP 후킹 포인트로 활용했습니다.",
                 ],
               },
               {
                 text: "**경쟁사보다 가격 우위를 점한다.**",
                 sub: [
-                  "최초 진출 시 재고 사입 형태로 마진 설정이 가능했습니다. 1달러여도 경쟁사 가격보다 저렴하게 판매하는 전략을 취했습니다.",
+                  "현지 상품 대비 비싼 가격과 배송비로 가격 민감도가 높았습니다. 경쟁사 대비 저렴한 판매가를 만드는 전략을 취했습니다.",
                 ],
               },
             ],
