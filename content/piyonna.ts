@@ -41,15 +41,15 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         ],
       },
       {
-        title: "Action 1: scope the research to the launch decision",
+        title: "Action 1: scope the MVP to how local shoppers arrive",
         blocks: [
           {
             ul: [
               {
-                text: "Ran interviews with five French shoppers to derive the site's selling points and must-haves.",
+                text: "Interviewed five French shoppers, pulled out the must-haves, and built to those.",
                 sub: [
-                  "How K-beauty and overseas products are perceived locally, and the purchase journey",
-                  "What drives purchase decisions locally, and where it differs",
+                  "How K-beauty and overseas products are perceived locally, and the purchase journey → hooks on the product detail page",
+                  "What drives purchase decisions locally → inventory buying and price optimization",
                 ],
               },
             ],
@@ -78,23 +78,23 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         ],
       },
       {
-        title: "Action 2: PM work to make the selling points real",
+        title: "Action 2: closing the grey zones with AI",
         blocks: [
           {
-            p: "Beyond core product specs, I took on the following to speed up the launch and shrink grey zones inside the TF.",
+            p: "I built these myself with Claude Code, to speed up the launch and cut the operating load.",
           },
           {
             ul: [
               {
-                text: "**Competitor price and category scraping and reporting**",
+                text: "**Competitor price and category scraping, and the reporting on it**",
                 sub: [
-                  "An automated daily pull of competitor products and prices, handed to the merchandising team so they could set pricing against live market data rather than assumption.",
+                  "An automated pull of competitor products and prices, handed to the merchandising team, who used it for inventory buying and category structure.",
                 ],
               },
               {
                 text: "**Review data localization pipeline**",
                 sub: [
-                  "Built a page to run review-data extraction, prompting, and display QA against Zigzag's review data, and shared it with the team.",
+                  "Built and shared a page that runs extraction of Zigzag's review data, prompting and processing, display, and localization QA.",
                 ],
               },
             ],
@@ -140,15 +140,15 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         ],
       },
       {
-        title: "액션 1: 런칭 의사결정에 필요한 만큼만 리서치한다",
+        title: "액션 1: 현지인 유입 시나리오에 맞춘 MVP 집중",
         blocks: [
           {
             ul: [
               {
-                text: "프랑스 소비자 5명 인터뷰를 진행해서 사이트의 셀링 포인트와 must have를 도출했습니다.",
+                text: "프랑스 소비자 5명 인터뷰를 통해 must have를 도출하고 집중했습니다.",
                 sub: [
-                  "현지에서의 K뷰티/해외 상품 인식 및 구매 여정",
-                  "현지에서의 구매 의사결정 영향 요인 및 차이점",
+                  "현지의 K뷰티·해외 상품 인식 및 구매 여정 → PDP 후킹",
+                  "현지의 구매 의사결정 영향 요인 → 상품 사입 및 가격 최적화 구현",
                 ],
               },
             ],
@@ -177,23 +177,23 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
         ],
       },
       {
-        title: "액션 2: 셀링 포인트를 실현하기 위한 PM으로서의 업무",
+        title: "액션 2: 그레이존은 AI로 해결했습니다",
         blocks: [
           {
-            p: "기본 기획 외 다음 업무로 TF 내 런칭 속도를 높이고 그레이존을 줄이기 위해 노력했습니다.",
+            p: "런칭 속도를 높이고 운영 부담을 줄이기 위해 클로드 코드로 직접 구현했습니다.",
           },
           {
             ul: [
               {
-                text: "**경쟁사 가격·카테고리 스크래핑 및 리포팅**",
+                text: "**경쟁사 가격·카테고리 스크래핑 및 리포팅 지원**",
                 sub: [
-                  "경쟁사 상품과 가격을 매일 자동으로 수집해 MD팀에 전달했고, 추측이 아니라 실시간 시장 데이터를 기준으로 가격을 정할 수 있도록 했습니다.",
+                  "경쟁사 상품·가격을 자동 스크랩해 MD팀에 전달했고, 상품 사입과 카테고리 구성에 활용했습니다.",
                 ],
               },
               {
                 text: "**리뷰 데이터 현지화 파이프라인 구축**",
                 sub: [
-                  "지그재그 내 리뷰 데이터 추출, 프롬프팅, 노출 검수를 운영할 수 있는 페이지를 구축하고 팀 내 공유했습니다.",
+                  "지그재그 리뷰 데이터 추출, 프롬프팅·가공, 노출, 로컬라이제이션 검수를 운영하는 페이지를 구축하고 팀 내 공유했습니다.",
                 ],
               },
             ],
