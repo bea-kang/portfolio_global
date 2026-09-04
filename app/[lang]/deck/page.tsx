@@ -231,6 +231,7 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
   // ── 2. Piyonna ──────────────────────────────────────────────────────
   opener("piyonna", "3", py);
 
+  // What the launch was and what it had to win on, then the work itself.
   push({
     render: (page) => (
       <Slide key="py-1" page={page}>
@@ -246,9 +247,6 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
           <Block label={py.sections[PY.background].title}>
             <Blocks blocks={py.sections[PY.background].blocks} />
           </Block>
-          <Block label={py.sections[PY.research].title}>
-            <Blocks blocks={py.sections[PY.research].blocks} />
-          </Block>
         </SlideBody>
       </Slide>
     ),
@@ -259,27 +257,15 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
       <Slide key="py-2" page={page}>
         <SlideHead eyebrow={py.eyebrow} title={py.title} period={py.meta} />
         <SlideBody
+          asideAlign="start"
           aside={
-            <div className="flex min-h-0 flex-1 flex-col justify-center gap-[18px]">
-              <div className="grid grid-cols-3 gap-[16px]">
-                {LIVE_IMAGES.map((img) => (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img
-                    key={img.src}
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full rounded-[14px] border border-neutral-200 object-contain"
-                  />
-                ))}
-              </div>
-              <p className="text-center text-[19px] text-neutral-400">
-                {py.liveCaption}
-              </p>
-            </div>
+            <Block label={py.sections[PY.pmWork].title}>
+              <Blocks blocks={py.sections[PY.pmWork].blocks} />
+            </Block>
           }
         >
-          <Block label={py.sections[PY.pmWork].title}>
-            <Blocks blocks={py.sections[PY.pmWork].blocks} />
+          <Block label={py.sections[PY.research].title}>
+            <Blocks blocks={py.sections[PY.research].blocks} />
           </Block>
         </SlideBody>
       </Slide>
@@ -290,7 +276,26 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
     render: (page) => (
       <Slide key="py-3" page={page}>
         <SlideHead eyebrow={py.eyebrow} title={py.title} period={py.meta} />
-        <SlideBody>
+        <SlideBody
+          aside={
+            <div className="flex min-h-0 flex-col justify-center gap-[16px]">
+              <div className="grid grid-cols-3 gap-[14px]">
+                {LIVE_IMAGES.map((img) => (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    key={img.src}
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full rounded-[14px] border border-neutral-200 object-contain"
+                  />
+                ))}
+              </div>
+              <p className="text-center text-[19px] leading-snug text-neutral-400">
+                {py.liveCaption}
+              </p>
+            </div>
+          }
+        >
           <Block label={py.sections[PY.results].title}>
             <Blocks blocks={py.sections[PY.results].blocks} />
           </Block>
