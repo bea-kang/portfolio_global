@@ -231,7 +231,10 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
   // ── 2. Piyonna ──────────────────────────────────────────────────────
   opener("piyonna", "3", py);
 
-  // What the launch was and what it had to win on, then the work itself.
+  // In the order the work happened: why the business existed and how the
+  // MVP was cut, then what the interviews said to win on and what got
+  // built to do it. The selling points are the output of action 1, so
+  // they follow it rather than opening the case.
   push({
     render: (page) => (
       <Slide key="py-1" page={page}>
@@ -239,8 +242,8 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
         <SlideBody
           asideAlign="start"
           aside={
-            <Block label={py.sections[PY.selling].title}>
-              <Blocks blocks={py.sections[PY.selling].blocks} />
+            <Block label={py.sections[PY.research].title}>
+              <Blocks blocks={py.sections[PY.research].blocks} />
             </Block>
           }
         >
@@ -264,8 +267,8 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
             </Block>
           }
         >
-          <Block label={py.sections[PY.research].title}>
-            <Blocks blocks={py.sections[PY.research].blocks} />
+          <Block label={py.sections[PY.selling].title}>
+            <Blocks blocks={py.sections[PY.selling].blocks} />
           </Block>
         </SlideBody>
       </Slide>
