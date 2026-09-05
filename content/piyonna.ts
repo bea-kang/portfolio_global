@@ -25,7 +25,7 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
   en: {
     eyebrow: "kakaostyle · Global Beauty TF",
     title: "Launching a K-beauty platform in France",
-    meta: "Product Manager · Dec 2025–Mar 2026",
+    meta: "Product Owner · Dec 2025–Mar 2026",
     intro:
       "A new business buying from beauty brands listed on Zigzag and reselling to French customers. I defined the market, the target customer, and the product structure from zero, and launched within three months. I actively stretched the PM role along the way: AI-assisted research, building an internal ops site, and data scraping.",
     sections: [
@@ -121,7 +121,7 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
   ko: {
     eyebrow: "kakaostyle · 글로벌 뷰티 TF",
     title: "프랑스 K뷰티 플랫폼 런칭",
-    meta: "Product Manager · 2025.12–2026.03",
+    meta: "Product Owner · 2025.12–2026.03",
     intro:
       "지그재그에 입점한 뷰티 브랜드를 프랑스 고객에게 매입 판매하는 신사업으로, 시장·타겟 고객·제품 구조를 0부터 정의해 3개월 안에 런칭했습니다. AI를 통한 리서치, 운영 사이트 구축, 데이터 스크래핑 등 PM의 역할을 적극적으로 확장하며 일했습니다.",
     sections: [

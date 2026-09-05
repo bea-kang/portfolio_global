@@ -161,7 +161,7 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
               </h3>
               <div className="mt-[24px] divide-y divide-neutral-200 border-t border-neutral-200">
                 {col.items.map((item) => (
-                  <div key={item.org + item.role} className="py-[22px]">
+                  <div key={item.org + item.role} className="py-[16px]">
                     <p className="text-[27px]">
                       <span className="font-medium">{item.org}</span>
                       <span className="text-neutral-500"> · {item.role}</span>

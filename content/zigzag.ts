@@ -8,14 +8,14 @@ export const zigzagHeader: Record<
   en: {
     eyebrow: "kakaostyle",
     title: "Zigzag: Commerce Platform",
-    meta: "Commerce Platform Planning / Product Owner · Jul 2022–Mar 2026",
+    meta: "Commerce Platform Planning / Product Owner · Jul 2022–Nov 2025",
     intro:
       "Zigzag is kakaostyle's fashion commerce platform, serving 7M MAU in Korea. I ran user research continuously, defined product and KPI roadmaps, and owned iteration, the backlog, and project management.",
   },
   ko: {
     eyebrow: "kakaostyle",
     title: "Zigzag (지그재그): 커머스플랫폼",
-    meta: "커머스플랫폼기획 / PO · 2022.07–2026.03",
+    meta: "커머스플랫폼기획 / Product Owner · 2022.07–2025.11",
     intro:
       "지그재그는 카카오스타일의 패션 커머스 플랫폼으로, 한국에서 700만 MAU에 서비스했습니다. 사용자 리서치를 상시 진행하고 제품·KPI 로드맵을 정의하며, 이터레이션을 담당하며 백로그, 프로젝트를 관리했습니다.",
   },
@@ -28,7 +28,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "Seller Seeding Promotion",
       period: "2024.03–05 / 09–10, 2025.02–04",
       background: [
-        "Cutting review-point payouts to save cost dropped review-submission rates by 40%. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Business teams were already running seeding manually every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
+        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Business teams were already running seeding manually every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
         "**Hypothesis:** turning seeding into a real product, productizing the operating cost sellers were already paying for informally, would recover review volume by leveraging what sellers wanted anyway.",
       ],
       action: [
@@ -250,7 +250,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "체험단 프로모션",
       period: "24.03-05 / 24.09-10 / 25.02-04",
       background: [
-        "플랫폼 비용 감축 정책으로 리뷰 포인트 지급을 중지, 리뷰 작성률이 40% 감소했습니다. 리뷰는 구매 유도 장치이자 셀러 판매량 확보의 필수 요인이라 리뷰 확보가 필요했습니다. 사업실 인터뷰 결과 조직별로 매주 수기 운영하고 있었지만, 상품 선정, 유저 모집, 지면 확보, 쿠폰 발행 관리 등 운영 절차로 인해 규모 확대가 어려웠습니다.",
+        "플랫폼 비용 감축 정책으로 리뷰 적립금이 절반으로 축소되면서, 3개월간 리뷰 작성률이 40% 하락했습니다. 리뷰는 구매 유도 장치이자 셀러 판매량 확보의 필수 요인이라 리뷰 확보가 필요했습니다. 사업실 인터뷰 결과 조직별로 매주 수기 운영하고 있었지만, 상품 선정, 유저 모집, 지면 확보, 쿠폰 발행 관리 등 운영 절차로 인해 규모 확대가 어려웠습니다.",
         "**가설:** 체험단 프로그램을 제품화해 운영 비용을 절감하고, 셀러 니즈를 레버리지로 리뷰를 확보한다.",
       ],
       action: [
@@ -326,10 +326,10 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "쿠폰 발급-승인 프로세스 개편",
       period: "25.04-06",
       background: [
-        "5년간 누적된 레거시 어드민과 신규 기능 추가의 반복으로 복잡도와 오발급 사례가 증가했습니다. 월 20건 이상의 오발급 처리로 인한 보상 비용, CS 대응, 제품팀 운영 비용이 지속적으로 늘고 있었습니다.",
+        "5년간 누적된 레거시 어드민과 신규 기능 추가의 반복으로 복잡도와 오발급 사례가 증가했습니다. 월 20건 이상의 오발급을 발급 후 취소와 회수로 대응하고 있어, 최대 1억 원의 비용과 CS 대응, 제품팀 운영 비용이 매번 발생했습니다.",
       ],
       action: [
-        "사업팀 인터뷰와 모더레이팅을 통해 실제 쿠폰 발급-승인 업무 과정을 확인하고 문제를 정의한 뒤, 어드민을 다시 설계했습니다: 적용 대상별 검수 절차와 빠른 승인 경로 신설, 사업 용어와 노출 위계를 실제 업무 언어에 맞춰 개선했습니다. 셀러 플랫폼 조직(BE, FE, PD)과 협업해 일정·QA·배포까지 프로젝트를 전체 리딩했고, 전사 세션을 열어 사업 조직 전체에 신규 개편 사항과 이전 데이터, 업무 처리 방법을 안내했습니다.",
+        "발급 담당 60명 전원을 인터뷰하고 모더레이팅해 실제 쿠폰 발급-승인 업무 과정을 확인하고 문제를 정의한 뒤, 어드민을 다시 설계했습니다: 적용 대상별 검수 절차와 빠른 승인 경로 신설, 사업 용어와 노출 위계를 실제 업무 언어에 맞춰 개선했습니다. 셀러 플랫폼 조직(BE, FE, PD)과 협업해 일정·QA·배포까지 프로젝트를 전체 리딩했고, 전사 세션을 열어 사업 조직 전체에 신규 개편 사항과 이전 데이터, 업무 처리 방법을 안내했습니다.",
       ],
       results: [{ label: "오발행 비중", value: "−90%" }],
       resultsNote: "MD, 재무, 제품팀의 리소스를 절감했습니다.",

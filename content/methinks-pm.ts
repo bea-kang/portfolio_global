@@ -15,7 +15,7 @@ export const methinksPm: Record<Locale, MethinksPmContent> = {
   en: {
     eyebrow: "methinks",
     title: "B2B2C Research Platform",
-    meta: "Product Manager · Jan 2021–Jan 2022",
+    meta: "Associate PM · PM · Feb 2021–Feb 2022",
     intro:
       "Owned feature design and business-client communication for a research SaaS web and app platform.",
     ownedTitle: "What I owned",
@@ -37,7 +37,7 @@ export const methinksPm: Record<Locale, MethinksPmContent> = {
   ko: {
     eyebrow: "methinks",
     title: "B2B2C 리서치 플랫폼",
-    meta: "PM · 2021.01–2022.01",
+    meta: "Associate PM · PM · 2021.02–2022.02",
     intro:
       "리서치 SaaS 웹, 앱 플랫폼으로 기능 설계 및 비즈니스 클라이언트 커뮤니케이션을 담당했습니다.",
     ownedTitle: "담당 업무",

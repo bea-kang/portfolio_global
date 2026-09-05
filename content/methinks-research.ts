@@ -15,7 +15,7 @@ export const methinksResearch: Record<Locale, MethinksResearchContent> = {
   en: {
     eyebrow: "methinks",
     title: "UX Research (design, interviews, analysis, reporting)",
-    meta: "UX Research Intern · Oct 2020–Jan 2021",
+    meta: "Intern Researcher · UX Research · Nov 2020–Feb 2021",
     didTitle: "What I did",
     did: [
       "Supported desk research and study design for new businesses and services when enterprise clients commissioned research.",
@@ -40,7 +40,7 @@ export const methinksResearch: Record<Locale, MethinksResearchContent> = {
   ko: {
     eyebrow: "methinks",
     title: "UX 리서치 (설계, 인터뷰, 분석, 리포팅)",
-    meta: "UX Research Intern · 2020.10–2021.01",
+    meta: "Intern Researcher · UX Research · 2020.11–2021.02",
     didTitle: "담당 업무",
     did: [
       "기업 고객 리서치 의뢰시 신규 사업/서비스를 데스크 리서치 및 조사 설계를 지원했습니다.",

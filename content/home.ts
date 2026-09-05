@@ -47,26 +47,35 @@ export const home: Record<Locale, HomeContent> = {
     experience: [
       {
         org: "kakaostyle",
-        role: "Commerce Platform Planning / Global TF",
-        period: "Jul 2022–Mar 2026",
+        role: "Product Owner · Global Beauty TF",
+        period: "Dec 2025–Mar 2026",
       },
-      { org: "methinks", role: "Product Manager", period: "Jan 2021–Jan 2022" },
+      {
+        org: "kakaostyle",
+        role: "Product Owner · Commerce Platform Planning",
+        period: "Jul 2022–Nov 2025",
+      },
       {
         org: "methinks",
-        role: "UX Research Intern",
-        period: "Oct 2020–Jan 2021",
+        role: "Associate PM · PM",
+        period: "Feb 2021–Feb 2022",
+      },
+      {
+        org: "methinks",
+        role: "Intern Researcher · UX Research",
+        period: "Nov 2020–Feb 2021",
       },
     ],
     education: [
       {
         org: "Seoul Women's University",
         role: "B.A. Business Administration",
-        period: "2016–2021",
+        period: "Mar 2016–Feb 2021",
       },
       {
         org: "Tsinghua University",
         role: "Exchange program",
-        period: "Aug 2019–Feb 2020",
+        period: "Jul 2019–Jan 2020",
       },
     ],
     projectsLabel: "Projects",
@@ -75,7 +84,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/piyonna",
         eyebrow: "kakaostyle · Global Beauty TF",
         title: "Piyonna",
-        period: "Product Manager · Dec 2025–Mar 2026",
+        period: "Product Owner · Dec 2025–Mar 2026",
         blurb:
           "Led the launch of a K-beauty platform in France, applying AI throughout: local research, competitor data scraping, building the ops site, and policy design.",
         cta: "View case study",
@@ -84,7 +93,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/zigzag",
         eyebrow: "kakaostyle",
         title: "Zigzag",
-        period: "Commerce Platform Planning / PO · 2022–2026",
+        period: "Commerce Platform Planning / Product Owner · 2022–2025",
         blurb:
           "Led projects across seeding, reviews, coupons, and promotions on a commerce app with 7M MAU.",
         cta: "View case study",
@@ -102,7 +111,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/methinks-research",
         eyebrow: "methinks",
         title: "UX Research",
-        period: "Research Intern · 2020–2021",
+        period: "Intern Researcher · 2020–2021",
         blurb:
           "Ran enterprise UX research projects, owning product usability tests, interview moderation, and reporting.",
         cta: "View case study",
@@ -134,26 +143,35 @@ export const home: Record<Locale, HomeContent> = {
     experience: [
       {
         org: "kakaostyle (카카오스타일)",
-        role: "커머스 플랫폼 기획 / 글로벌 TF",
-        period: "2022.07–2026.03",
+        role: "Product Owner · 글로벌 뷰티 TF",
+        period: "2025.12–2026.03",
       },
-      { org: "methinks", role: "PM", period: "2021.01–2022.01" },
+      {
+        org: "kakaostyle (카카오스타일)",
+        role: "Product Owner · 커머스플랫폼 기획",
+        period: "2022.07–2025.11",
+      },
       {
         org: "methinks",
-        role: "UX Research Intern",
-        period: "2020.10–2021.01",
+        role: "Associate PM · PM",
+        period: "2021.02–2022.02",
+      },
+      {
+        org: "methinks",
+        role: "Intern Researcher · UX Research",
+        period: "2020.11–2021.02",
       },
     ],
     education: [
       {
         org: "서울여자대학교",
         role: "경영학과 학사",
-        period: "2016–2021",
+        period: "2016.03–2021.02",
       },
       {
         org: "Tsinghua University",
         role: "교환학생",
-        period: "2019.08–2020.02",
+        period: "2019.07–2020.01",
       },
     ],
     projectsLabel: "프로젝트",
@@ -162,7 +180,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/piyonna",
         eyebrow: "kakaostyle · 글로벌 뷰티 TF",
         title: "Piyonna (피어나)",
-        period: "PM · 2025.12–2026.03",
+        period: "Product Owner · 2025.12–2026.03",
         blurb:
           "프랑스 K뷰티 플랫폼 런칭을 담당하며, AI를 적극 적용하여 현지 리서치, 경쟁사 데이터 스크래핑, 운영 사이트 구축, 정책 설계를 담당했습니다.",
         cta: "케이스 스터디 보기",
@@ -171,7 +189,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/zigzag",
         eyebrow: "kakaostyle",
         title: "Zigzag (지그재그)",
-        period: "커머스플랫폼기획 / PO · 2022–2026",
+        period: "커머스플랫폼기획 / Product Owner · 2022–2025",
         blurb:
           "700만 MAU 커머스 앱에서 체험단, 리뷰, 쿠폰, 프로모션 등 프로젝트를 리딩했습니다.",
         cta: "케이스 스터디 보기",
@@ -189,7 +207,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/methinks-research",
         eyebrow: "methinks",
         title: "UX 리서치",
-        period: "Research Intern · 2020–2021",
+        period: "Intern Researcher · 2020–2021",
         blurb:
           "기업 UX 리서치 프로젝트를 운영하며 제품 UT, 인터뷰 모더레이팅, 리포팅을 담당했습니다.",
         cta: "케이스 스터디 보기",

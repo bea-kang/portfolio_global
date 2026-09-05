@@ -42,7 +42,7 @@ export async function generateMetadata({
         : "Yebeen (Bea) Kang | Product Manager",
     description:
       locale === "ko"
-        ? "강예빈 PM/PO 포트폴리오: 지그재그, 피어나, methinks 커머스·플랫폼 제품 작업"
+        ? "강예빈 PM/Product Owner 포트폴리오: 지그재그, 피어나, methinks 커머스·플랫폼 제품 작업"
         : "Portfolio of Yebeen (Bea) Kang, Product Manager / Product Owner: commerce and platform products for Zigzag, Piyonna, and methinks.",
   };
 }
