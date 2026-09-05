@@ -83,6 +83,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
       action: [
         "Designed the experiment: defined the recommended-coupon logic and what to surface (savings amount, extra discount, recommended products) and the funnel. Ran it by varying recommendation pattern (single vs. unlimited), timing (campaign vs. regular), and product logic (personalized vs. ranked) to find a winner, tracking average order value, item count, and cart additions with the data team.",
+        "Extending the test and re-running it showed the amount-optimization UI only held up inside small campaign periods, so I pivoted the feature into a switch the team turns on per campaign rather than leaving it on all the time.",
       ],
       results: [
         { label: "Banner CTR", value: "3.8%" },
@@ -92,7 +93,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "CTR came in low, read as weak initial framing and incentive, but the lift in payment per order (about ₩2,000) outweighed the rise in coupon cost per order (about ₩1,000) in the test group.",
       lesson: [
-        "Maker buy-in decides how fast and how far an experiment goes. Winning over an owner worried about checkout usability took time, so the final UX shipped more conservative than intended, and coupon budget, a variable outside the product's control, kept the test extending instead of scaling. Now I settle the guardrails on what I cannot control and win the room before build starts.",
+        "Maker buy-in decides how fast and how far an experiment goes. Winning over an owner worried about checkout usability took time, so the final UX shipped more conservative than intended, and coupon budget, a variable outside the product's control, kept it from scaling as an always-on surface. Now I settle the guardrails on what I cannot control and win the room before build starts.",
       ],
       media: [
         {
@@ -328,6 +329,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
       action: [
         "실험을 기획했습니다: 추천 쿠폰 정의와 노출 정보(차액, 추가 할인 정보, 추천 상품군), 퍼널을 설계하고, 추천 패턴(1회 추천 vs 무한 추천), 기간(기획전 vs 평시), 상품 로직(개인화 vs 랭킹) 변수를 바꿔가며 운영해 winner를 도출했습니다. 성공 지표(실험군 평균 구매액, 개수, 상품 추가량)를 모니터링하며 데이터팀과 커뮤니케이션했습니다.",
+        "실험 기간을 연장해 반복 운영한 결과, 금액 최적화 UI는 소규모 기획전 기간에만 유효하다는 점을 도출했습니다. 상시 노출 대신 기획전 단위로 켜고 끌 수 있도록 기능을 스위치 구조로 피벗했습니다.",
       ],
       results: [
         { label: "추천 배너 CTR", value: "3.8%" },
@@ -337,7 +339,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       resultsNote:
         "최초 정보 소구·동기 부여 부족으로 CTR은 낮은 편이었으나, 실험군 쿠폰 비용 상승폭(건당 평균 1천원) 대비 건당 결제액 상승폭(건당 평균 2천원)이 우세했습니다.",
       lesson: [
-        "메이커의 공감이 실험 속도와 완성도를 좌우합니다. 결제 사용성을 우려한 메이커를 설득하는 데 시간이 들면서 최종 UX는 초기 구상보다 소극적으로 구현됐고, 쿠폰 비용이라는 통제 밖 변수 때문에 실험을 확대하지 못하고 연장만 반복했습니다. 이후로는 빌드에 들어가기 전에 통제할 수 없는 요소를 가드레일로 정리하고 메이커의 공감을 먼저 얻습니다.",
+        "메이커의 공감이 실험 속도와 완성도를 좌우합니다. 결제 사용성을 우려한 메이커를 설득하는 데 시간이 들면서 최종 UX는 초기 구상보다 소극적으로 구현됐고, 쿠폰 비용이라는 통제 밖 변수 때문에 상시 노출로는 확대하지 못했습니다. 이후로는 빌드에 들어가기 전에 통제할 수 없는 요소를 가드레일로 정리하고 메이커의 공감을 먼저 얻습니다.",
       ],
       media: [
         {
