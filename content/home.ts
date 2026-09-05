@@ -102,7 +102,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/methinks-pm",
         eyebrow: "methinks",
         title: "B2B2C Research Platform",
-        period: "Product Manager · 2021–2022",
+        period: "Associate PM · PM · 2021–2022",
         blurb:
           "Feature design and business-client communication for a research SaaS web and app platform.",
         cta: "View case study",
@@ -198,7 +198,7 @@ export const home: Record<Locale, HomeContent> = {
         href: "/projects/methinks-pm",
         eyebrow: "methinks",
         title: "B2B2C 리서치 플랫폼",
-        period: "PM · 2021–2022",
+        period: "Associate PM · PM · 2021–2022",
         blurb:
           "리서치 SaaS 웹·앱 플랫폼의 기능 설계와 비즈니스 클라이언트 커뮤니케이션을 담당했습니다.",
         cta: "케이스 스터디 보기",

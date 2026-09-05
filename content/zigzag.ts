@@ -132,6 +132,31 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
     },
     {
       number: "04",
+      title: "Review Ranking for Purchase Conversion",
+      period: "2025.07–10",
+      background: [
+        "I took over the review-ranking domain after the ranking structure had already shipped. The ranking existed, but only a small share of users knew about it, so it did nothing to motivate review writing. I laid out a roadmap: revamp the ranking, activate it, then add affiliate.",
+        "**Hypothesis:** tying the ranking to rewards and motivation, and scoring it on behaviour that actually moves purchases, would lift engagement and retention among the users who write the most reviews.",
+      ],
+      action: [
+        "I started by finding the segment whose behaviour could actually change. User research plus review-related behavioural data (visit frequency, order frequency, writing frequency) gave me the top 15% of users as a segment.",
+        "**Making the ranking visible:** a ranking UI showed users where they stood relative to each other, with feedback on every rank gain and better odds in the seeding draw as supporting incentives.",
+        "**Changing what counts as score:** I logged purchase-impact events (add-to-cart and orders following a review view) and weighted them into the ranking score.",
+        "I also added a review browsing page, so discovery and user-to-user interaction had somewhere to happen, which became the base for the rest of the roadmap. Since I inherited the domain, I walked the implementation with the engineers to find what could realistically be reworked, then redefined the product KPIs and monitoring data to align each roadmap stage with the team.",
+      ],
+      results: [
+        {
+          label: "Engagement and retention, top 15% of users (vs. before)",
+          value: "+6%p",
+        },
+      ],
+      lesson: [
+        "A feature existing and a feature working are different things: the ranking had shipped, but to a user who never noticed it, it did not exist. And what you count as score decides what users do. Moving the score onto purchase-impact events was the biggest lever in this project.",
+      ],
+      media: [],
+    },
+    {
+      number: "05",
       title: "Stacked Coupon Structure",
       period: "2024.01–03",
       background: [
@@ -156,7 +181,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "05",
+      number: "06",
       title: "First-Purchase Deal",
       period: "2023.03–05",
       background: [
@@ -185,7 +210,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "06",
+      number: "07",
       title: "Discounted-Price Structure by Option",
       period: "2024.03–05",
       background: [
@@ -217,7 +242,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "07",
+      number: "08",
       title: "First-Come Order Coupon",
       period: "2023.09",
       background: [
@@ -351,6 +376,31 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
     },
     {
       number: "04",
+      title: "리뷰 랭킹 기반 구매 전환 강화",
+      period: "25.07-10",
+      background: [
+        "리뷰 랭킹 구조가 배포된 뒤 개편 과제를 인수인계받았습니다. 랭킹은 존재했지만 소수의 유저만 인지하고 있어 리뷰 작성 동기로 작동하지 않았습니다. 랭킹 개편, 활성화, 어필리에이트 신설 순으로 로드맵을 구성했습니다.",
+        "**가설:** 랭킹을 리워드와 동기부여 장치에 연결하고 점수 기준을 구매 영향 행동으로 바꾸면, 리뷰를 많이 쓰는 상위 유저의 참여와 리텐션을 끌어올릴 수 있다.",
+      ],
+      action: [
+        "먼저 행동이 바뀔 수 있는 세그먼트를 특정했습니다. 유저 리서치와 리뷰 관련 행동 데이터(방문 빈도, 주문 빈도, 작성 빈도)를 분석해 상위 15% 유저를 세그먼트화했습니다.",
+        "**랭킹을 보이게 만들기:** 랭킹 UI로 유저 간의 위치를 시각화하고, 랭킹 상승 시 피드백과 체험단 상품 당첨 확률 상향을 보조 장치로 붙였습니다.",
+        "**무엇을 점수로 셀지 다시 정하기:** 리뷰 조회 후 장바구니 추가와 구매 등 구매 영향 지표를 로깅하고 랭킹 점수에 가중치로 반영했습니다.",
+        "리뷰 전시 페이지를 신설해 탐색과 유저 간 교류가 발생할 수 있는 환경을 만들고, 이후 로드맵의 기반을 구성했습니다. 인수인계받은 도메인이라 개발자와 구현 구조를 함께 짚으며 개편 가능한 범위를 확인했고, 제품 KPI와 모니터링 데이터를 재정의해 로드맵 단계별 요구사항과 목표를 팀과 얼라인했습니다.",
+      ],
+      results: [
+        {
+          label: "상위 15% 유저 참여율·리텐션 (개편 전 대비)",
+          value: "+6%p",
+        },
+      ],
+      lesson: [
+        "기능이 있는 것과 작동하는 것은 다릅니다. 랭킹은 이미 배포되어 있었지만 유저가 인지하지 못하면 없는 기능이었습니다. 그리고 무엇을 점수로 세느냐가 유저 행동을 결정합니다. 점수 기준을 구매 영향 지표로 바꾼 것이 이 과제에서 가장 큰 레버였습니다.",
+      ],
+      media: [],
+    },
+    {
+      number: "05",
       title: "중복 쿠폰 구조 신설",
       period: "24.01-03",
       background: [
@@ -375,7 +425,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "05",
+      number: "06",
       title: "첫구매딜 프로모션 신설",
       period: "23.03-05",
       background: [
@@ -401,7 +451,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "06",
+      number: "07",
       title: "옵션 할인 판매가 구조 신설",
       period: "24.03-05",
       background: [
@@ -430,7 +480,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "07",
+      number: "08",
       title: "선착순 주문 쿠폰",
       period: "23.09",
       background: [

@@ -85,7 +85,7 @@ export default async function ZigzagPage({
             </div>
           </div>
 
-          <RefShots shots={c.media} />
+          {c.media.length > 0 && <RefShots shots={c.media} />}
 
           {c.links && (
             <RefLinks label={t.referencesLabel} links={c.links} />
