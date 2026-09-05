@@ -20,7 +20,7 @@ export type DeckDict = {
 };
 
 const shared = {
-  zigzagCases: ["01", "02", "03"],
+  zigzagCases: ["01", "02", "03", "04"],
 };
 
 export const deck: Record<Locale, DeckDict> = {
