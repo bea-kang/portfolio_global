@@ -106,10 +106,10 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "Coupon Issuance & Approval Overhaul",
       period: "2025.04–06",
       background: [
-        "Five years of an admin tool built up through legacy patches had made issuing a coupon error-prone: 20+ misissued coupons a month, each one costing compensation, CS time, and product-team cleanup.",
+        "Five years of an admin tool built up through legacy patches had made issuing a coupon error-prone: 20+ misissued coupons a month, each one handled by cancelling and clawing the coupon back, at up to ₩100M in cost plus CS time and product-team cleanup.",
       ],
       action: [
-        "Interviewed and shadowed the business team's actual coupon workflow to define the problem, then rebuilt the tool: review and approval steps scoped to what's being applied, faster approval paths, and terminology and hierarchy that matched how the business side actually talks about it. Led the cross-functional build end to end (backend, frontend, design, schedule, QA, release) and ran a company-wide session walking every business team through the new process, legacy data, and rollout timeline.",
+        "Interviewed and shadowed all 60 people who issue coupons, walking their actual workflow to define the problem, then rebuilt the tool: review and approval steps scoped to what's being applied, faster approval paths, and terminology and hierarchy that matched how the business side actually talks about it. Led the cross-functional build end to end (backend, frontend, design, schedule, QA, release) and ran a company-wide session walking every business team through the new process, legacy data, and rollout timeline.",
       ],
       results: [{ label: "Misissued coupons", value: "−90%" }],
       resultsNote:
