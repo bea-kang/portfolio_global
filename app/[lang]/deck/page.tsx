@@ -439,9 +439,6 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
           <h2 className="text-[92px] font-bold leading-none tracking-tight">
             {d.closingLabel}
           </h2>
-          <p className="mt-[32px] text-[28px] text-neutral-500">
-            {d.closingNote}
-          </p>
           <p className="mt-[40px] text-[30px] text-neutral-800">{EMAIL}</p>
           <p className="mt-[6px] text-[30px] text-neutral-800">
             {LINKEDIN_URL.replace("https://www.", "")}
