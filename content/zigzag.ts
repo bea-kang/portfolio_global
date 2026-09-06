@@ -143,7 +143,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       action: [
         "I started by finding the segment whose behaviour could actually change. User research plus review-related behavioural data (visit frequency, order frequency, writing frequency) gave me the top 15% of users as a segment.",
         "**Making the ranking visible:** a ranking UI showed users where they stood relative to each other, with feedback on every rank gain and better odds in the seeding draw as supporting incentives.",
-        "**Changing what counts as score:** I logged purchase-impact events (add-to-cart and orders following a review view) and weighted them into the ranking score.",
+        "**Redefining the score criteria:** I logged purchase-impact events (add-to-cart and orders following a review view) and weighted them into the ranking score.",
         "I also added a review browsing page, so discovery and user-to-user interaction had somewhere to happen, which became the base for the rest of the roadmap. Since I inherited the domain, I walked the implementation with the engineers to find what could realistically be reworked, then redefined the product KPIs and monitoring data to align each roadmap stage with the team.",
       ],
       results: [
@@ -389,7 +389,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       action: [
         "먼저 행동이 바뀔 수 있는 세그먼트를 특정했습니다. 유저 리서치와 리뷰 관련 행동 데이터(방문 빈도, 주문 빈도, 작성 빈도)를 분석해 상위 15% 유저를 세그먼트화했습니다.",
         "**랭킹을 보이게 만들기:** 랭킹 UI로 유저 간의 위치를 시각화하고, 랭킹 상승 시 피드백과 체험단 상품 당첨 확률 상향을 보조 장치로 붙였습니다.",
-        "**무엇을 점수로 셀지 다시 정하기:** 리뷰 조회 후 장바구니 추가와 구매 등 구매 영향 지표를 로깅하고 랭킹 점수에 가중치로 반영했습니다.",
+        "**점수 기준 재정립:** 리뷰 조회 후 장바구니 추가와 구매 등 구매 영향 지표를 로깅하고 랭킹 점수에 가중치로 반영했습니다.",
         "리뷰 전시 페이지를 신설해 탐색과 유저 간 교류가 발생할 수 있는 환경을 만들고, 이후 로드맵의 기반을 구성했습니다. 인수인계받은 도메인이라 개발자와 구현 구조를 함께 짚으며 개편 가능한 범위를 확인했고, 제품 KPI와 모니터링 데이터를 재정의해 로드맵 단계별 요구사항과 목표를 팀과 얼라인했습니다.",
       ],
       results: [
