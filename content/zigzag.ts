@@ -28,7 +28,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "Seller Seeding Promotion",
       period: "2024.03–05 / 09–10, 2025.02–04",
       background: [
-        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Interviews with the business org found 12 merchandisers running seeding by hand every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
+        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Interviews with the business org found 12 merchandisers (MDs) running seeding by hand every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
         "**Hypothesis:** turning seeding into a real product, productizing the operating cost sellers were already paying for informally, would recover review volume by leveraging what sellers wanted anyway.",
       ],
       action: [
@@ -83,7 +83,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         "**Hypothesis:** a UI that lets users feel the benefit before checkout would nudge them into buying more.",
       ],
       action: [
-        "Designed the experiment: defined the recommended-coupon logic and what to surface (savings amount, extra discount, recommended products) and the funnel. Ran it by varying recommendation pattern (single vs. unlimited), timing (campaign vs. regular), and product logic (personalized vs. ranked) to find a winner, tracking average order value, item count, and cart additions with the data team.",
+        "Designed the experiment: defined the recommended-coupon logic and what to surface (savings amount, extra discount, recommended products) and the funnel. Ran it by varying recommendation pattern (single vs. unlimited), timing (campaign vs. regular), and product logic (personalized vs. ranked) to find a winner. Monitored the success metrics (test-group average order value, item count, cart additions) and guardrail metrics, settling significance thresholds, run length, and the rest of the operating detail with the data team, and worked with the MD team to open up campaign periods and their coupons as experiment variables.",
         "Extending the test and re-running it showed the amount-optimization UI only held up inside small campaign periods, so I pivoted the feature into a switch the team turns on per campaign rather than leaving it on all the time.",
       ],
       results: [
@@ -330,7 +330,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         "**가설:** 결제 전 혜택을 체감시키는 UI가 추가 구매를 유도할 것이다.",
       ],
       action: [
-        "실험을 기획했습니다: 추천 쿠폰 정의와 노출 정보(차액, 추가 할인 정보, 추천 상품군), 퍼널을 설계하고, 추천 패턴(1회 추천 vs 무한 추천), 기간(기획전 vs 평시), 상품 로직(개인화 vs 랭킹) 변수를 바꿔가며 운영해 winner를 도출했습니다. 성공 지표(실험군 평균 구매액, 개수, 상품 추가량)를 모니터링하며 데이터팀과 커뮤니케이션했습니다.",
+        "실험을 기획했습니다: 추천 쿠폰 정의와 노출 정보(차액, 추가 할인 정보, 추천 상품군), 퍼널을 설계하고, 추천 패턴(1회 추천 vs 무한 추천), 기간(기획전 vs 평시), 상품 로직(개인화 vs 랭킹) 변수를 바꿔가며 운영해 winner를 도출했습니다. 성공 지표(실험군 평균 구매액, 개수, 상품 추가량) 및 가드레일 지표를 모니터링하며 데이터팀과 실험 유의성, 기간 등 세부 운영 요소를 조율했고, MD팀과의 협의를 통해 기획전 기간과 쿠폰을 실험 변수로 활용할 수 있도록 확장했습니다.",
         "실험 기간을 연장해 반복 운영한 결과, 금액 최적화 UI는 소규모 기획전 기간에만 유효하다는 점을 도출했습니다. 상시 노출 대신 기획전 단위로 켜고 끌 수 있도록 기능을 스위치 구조로 피벗했습니다.",
       ],
       results: [
