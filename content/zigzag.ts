@@ -153,7 +153,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         },
       ],
       lesson: [
-        "A feature existing and a feature working are different things: the ranking had shipped, but to a user who never noticed it, it did not exist. And what you count as score decides what users do. Moving the score onto purchase-impact events was the biggest lever in this project.",
+        "Making an existing feature work is a different job from building a new one. I narrowed to the 15% of users who could actually respond, built the hypothesis on that segment, and confirmed it in the results.",
       ],
       media: [],
     },
@@ -399,7 +399,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
         },
       ],
       lesson: [
-        "기능이 있는 것과 작동하는 것은 다릅니다. 랭킹은 이미 배포되어 있었지만 유저가 인지하지 못하면 없는 기능이었습니다. 그리고 무엇을 점수로 세느냐가 유저 행동을 결정합니다. 점수 기준을 구매 영향 지표로 바꾼 것이 이 과제에서 가장 큰 레버였습니다.",
+        "이미 있는 기능을 작동하게 만드는 일은 새로 만드는 것과 다른 접근이 필요합니다. 반응할 수 있는 15%로 좁혀 가설을 세우고, 결과로 확인했습니다.",
       ],
       media: [],
     },
