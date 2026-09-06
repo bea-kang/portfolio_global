@@ -28,12 +28,13 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "Seller Seeding Promotion",
       period: "2024.03–05 / 09–10, 2025.02–04",
       background: [
-        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Business teams were already running seeding manually every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
+        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Interviews with the business org found 12 merchandisers running seeding by hand every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
         "**Hypothesis:** turning seeding into a real product, productizing the operating cost sellers were already paying for informally, would recover review volume by leveraging what sellers wanted anyway.",
       ],
       action: [
         "Defined and led the full seeding product cycle end to end (seller application → selection → product exposure → user application → winner selection → purchase → review) and iterated on it using metrics and seller interviews:",
-        "**Seeding order-success rate fell from 95% to 75%:** added a penalty mechanism that issues points when a seller fails to ship without notice, plus pre-order creation, recovering the success rate to 99%.",
+        "**Order-success rate fell from 95% to 75%:** users dropped out between selection and ordering: seller stock ran out first, and each user had to order manually. A three-day application window and automatic ordering on selection recovered the rate to 99%.",
+        "**Seller abuse:** sellers applied in bulk for the exposure and never shipped, pushing CS claims to 50 a day. Non-shipment penalty points, blocked listings for sold-out products, and a seller-participation admin returned it to normal.",
         "**Reviews were slow to arrive:** writing a review took 10+ days on average; a revised winner-selection logic and a daily reminder process cut it to under 5 days.",
         "Also owned policy: winner criteria, per-cycle scheduling, listed-product conditions (quantity, shipping, attributes), order/settlement policy, and seller/customer penalties, coordinated with legal and CS.",
       ],
@@ -276,14 +277,15 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "체험단 프로모션",
       period: "24.03-05 / 24.09-10 / 25.02-04",
       background: [
-        "플랫폼 비용 감축 정책으로 리뷰 적립금이 절반으로 축소되면서, 3개월간 리뷰 작성률이 40% 하락했습니다. 리뷰는 구매 유도 장치이자 셀러 판매량 확보의 필수 요인이라 리뷰 확보가 필요했습니다. 사업실 인터뷰 결과 조직별로 매주 수기 운영하고 있었지만, 상품 선정, 유저 모집, 지면 확보, 쿠폰 발행 관리 등 운영 절차로 인해 규모 확대가 어려웠습니다.",
+        "플랫폼 비용 감축 정책으로 리뷰 적립금이 절반으로 축소되면서, 3개월간 리뷰 작성률이 40% 하락했습니다. 리뷰는 구매 유도 장치이자 셀러 판매량 확보의 필수 요인이라 리뷰 확보가 필요했습니다. 사업실 인터뷰 결과 MD 12명이 매주 수기로 운영하고 있었지만, 상품 선정, 유저 모집, 지면 확보, 쿠폰 발행 관리 등 운영 절차로 인해 규모 확대가 어려웠습니다.",
         "**가설:** 체험단 프로그램을 제품화해 운영 비용을 절감하고, 셀러 니즈를 레버리지로 리뷰를 확보한다.",
       ],
       action: [
         "체험단 프로모션 제품 사이클(셀러 신청 → 선정 → 상품 노출 → 유저 신청 → 당첨 → 구매 → 리뷰 작성)을 정의하고 프로젝트를 리딩했습니다. 지표 기반 제품 이터레이션과 셀러 인터뷰를 통해 로드맵을 개발했습니다:",
-        "**체험단 주문 성공률 95% → 75% 하락:** 셀러가 무단으로 상품을 미지급할 경우 포인트를 발행할 수 있도록 패널티 기능을 도입하고, 선주문 생성 기능 등을 더해 주문 성공률을 99%로 회복했습니다.",
+        "**주문 성공률 95% → 75% 하락:** 선정과 주문 사이에서 이탈이 발생하고 있었습니다. 셀러 재고가 먼저 소진되고 유저가 직접 주문해야 하는 구조라, 모집 기간을 3일로 제한하고 선정 즉시 자동 주문되도록 바꿔 99%로 회복했습니다.",
+        "**셀러 어뷰징:** 노출만을 목적으로 대량 신청 후 미배송하는 사례가 발생해 CS 클레임이 하루 최대 50건까지 올랐습니다. 미배송 페널티 포인트, 재고 소진 상품의 등록 차단, 셀러 참여 관리 어드민을 도입해 정상 수준으로 회복했습니다.",
         "**리뷰 작성일 지연:** 평균 10일 이상 소요되던 리뷰 작성을, 당첨 로직과 일단위 안내 프로세스를 도입해 평균 5일 이내로 단축했습니다.",
-        "서비스 정책 수립(고객 당첨 기준, 사이클별 스케쥴, 등록 상품 조건: 수량·배송·상품 속성 등), 주문-정산 정책 정의 및 담당 팀 커뮤니케이션, 운영 정책(셀러 패널티 포인트, 고객 패널티 등) 수립 및 법무·CS 담당자 커뮤니케이션도 담당했습니다.",
+        "서비스 정책 수립(고객 당첨 기준, 사이클별 스케쥴, 등록 상품 조건: 수량·배송·상품 속성 등), 주문-정산 정책 정의 및 담당 팀 커뮤니케이션, 운영 정책(셀러 페널티 포인트, 고객 페널티 등) 수립 및 법무·CS 담당자 커뮤니케이션도 담당했습니다.",
       ],
       results: [
         { label: "상품 제공 수 (주평균)", value: "200개 → 1,600개" },
