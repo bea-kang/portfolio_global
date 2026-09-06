@@ -339,13 +339,24 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
         ))}
       </Block>
     );
-    const action = (
+    const actionBlock = (paras: readonly string[]) => (
       <Block label={t.actionLabel}>
-        {c.action.map((p, i) => (
+        {paras.map((p, i) => (
           <Para key={i} text={p} />
         ))}
       </Block>
     );
+    const action = actionBlock(c.action);
+    // Seeding's action is five iteration notes, which only fit one slide by
+    // eating the bottom margin the page number sits in. Past four, the
+    // action runs across two slides instead of tightening the type.
+    const actionPages =
+      c.action.length > 4
+        ? [
+            c.action.slice(0, Math.ceil(c.action.length / 2)),
+            c.action.slice(Math.ceil(c.action.length / 2)),
+          ]
+        : [c.action];
 
     if (split) {
       push({
@@ -356,13 +367,17 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
           </Slide>
         ),
       });
-      push({
-        render: (page) => (
-          <Slide key={`zz-${c.number}-ac`} page={page}>
-            {head}
-            <SlideBody aside={shot(1)}>{action}</SlideBody>
-          </Slide>
-        ),
+      actionPages.forEach((paras, i) => {
+        push({
+          render: (page) => (
+            <Slide key={`zz-${c.number}-ac${i}`} page={page}>
+              {head}
+              <SlideBody aside={i === actionPages.length - 1 ? shot(1) : undefined}>
+                {actionBlock(paras)}
+              </SlideBody>
+            </Slide>
+          ),
+        });
       });
     } else {
       push({

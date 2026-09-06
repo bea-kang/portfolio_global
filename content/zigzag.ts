@@ -28,13 +28,13 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       title: "Seller Seeding Promotion",
       period: "2024.03–05 / 09–10, 2025.02–04",
       background: [
-        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Interviews with the business org found 12 merchandisers (MDs) running seeding by hand every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
+        "Halving review credits to cut platform cost dropped review-submission rates by 40% over three months. Reviews drive both purchase intent and seller sales, so we needed another way to generate them. Interviews with the business org found 12 MDs running seeding by hand every week, spreadsheet by spreadsheet (selecting products, recruiting users, booking placements, issuing coupons), which capped how far it could scale.",
         "**Hypothesis:** turning seeding into a real product, productizing the operating cost sellers were already paying for informally, would recover review volume by leveraging what sellers wanted anyway.",
       ],
       action: [
         "Defined and led the full seeding product cycle end to end (seller application → selection → product exposure → user application → winner selection → purchase → review) and iterated on it using metrics and seller interviews:",
         "**Order-success rate fell from 95% to 75%:** users dropped out between selection and ordering: seller stock ran out first, and each user had to order manually. A three-day application window and automatic ordering on selection recovered the rate to 99%.",
-        "**Seller abuse:** sellers applied in bulk for the exposure and never shipped, pushing CS claims to 50 a day. Non-shipment penalty points, blocked listings for sold-out products, and a seller-participation admin returned it to normal.",
+        "**Seller abuse:** sellers applied in bulk for the exposure and never shipped, pushing CS claims as high as 50 a day. Non-shipment penalty points, blocked listings for sold-out products, and a seller-participation admin returned it to normal.",
         "**Reviews were slow to arrive:** writing a review took 10+ days on average; a revised winner-selection logic and a daily reminder process cut it to under 5 days.",
         "Also owned policy: winner criteria, per-cycle scheduling, listed-product conditions (quantity, shipping, attributes), order/settlement policy, and seller/customer penalties, coordinated with legal and CS.",
       ],
@@ -388,7 +388,7 @@ export const zigzagCases: Record<Locale, ZigzagCase[]> = {
       ],
       action: [
         "먼저 행동이 바뀔 수 있는 세그먼트를 특정했습니다. 유저 리서치와 리뷰 관련 행동 데이터(방문 빈도, 주문 빈도, 작성 빈도)를 분석해 상위 15% 유저를 세그먼트화했습니다.",
-        "**랭킹을 보이게 만들기:** 랭킹 UI로 유저 간의 위치를 시각화하고, 랭킹 상승 시 피드백과 체험단 상품 당첨 확률 상향을 보조 장치로 붙였습니다.",
+        "**랭킹 인지 확보:** 랭킹 UI로 유저 간의 위치를 시각화하고, 랭킹 상승 시 피드백과 체험단 상품 당첨 확률 상향을 보조 장치로 붙였습니다.",
         "**점수 기준 재정립:** 리뷰 조회 후 장바구니 추가와 구매 등 구매 영향 지표를 로깅하고 랭킹 점수에 가중치로 반영했습니다.",
         "리뷰 전시 페이지를 신설해 탐색과 유저 간 교류가 발생할 수 있는 환경을 만들고, 이후 로드맵의 기반을 구성했습니다. 인수인계받은 도메인이라 개발자와 구현 구조를 함께 짚으며 개편 가능한 범위를 확인했고, 제품 KPI와 모니터링 데이터를 재정의해 로드맵 단계별 요구사항과 목표를 팀과 얼라인했습니다.",
       ],

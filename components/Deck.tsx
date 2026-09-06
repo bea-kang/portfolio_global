@@ -29,7 +29,7 @@ export function Slide({
 }) {
   return (
     <section
-      className={`deck-slide relative flex h-[1080px] w-[1920px] shrink-0 flex-col overflow-hidden px-[120px] py-[92px] ${
+      className={`deck-slide relative flex h-[1080px] w-[1920px] shrink-0 flex-col overflow-hidden px-[120px] py-[68px] ${
         tone === "fill" ? "bg-neutral-950 text-white" : "bg-white text-neutral-950"
       }`}
     >
@@ -89,13 +89,13 @@ export function SlideBody({
 }) {
   if (!aside) {
     return (
-      <div className="mt-[52px] flex min-h-0 w-full max-w-[1400px] flex-1 flex-col gap-[40px]">
+      <div className="mt-[44px] flex min-h-0 w-full max-w-[1180px] flex-1 flex-col gap-[40px]">
         {children}
       </div>
     );
   }
   return (
-    <div className="mt-[52px] grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-[88px]">
+    <div className="mt-[44px] grid min-h-0 flex-1 grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] gap-[88px]">
       <div className="flex min-w-0 flex-col gap-[40px]">{children}</div>
       <div
         className={`flex min-h-0 min-w-0 flex-col gap-[28px] ${
@@ -121,7 +121,7 @@ export function Block({
       {label && (
         <h3 className="text-[29px] font-bold tracking-tight">{label}</h3>
       )}
-      <div className="mt-[16px] space-y-[14px] text-[23px] leading-[1.7] text-neutral-700">
+      <div className="mt-[18px] space-y-[26px] text-[23px] leading-[1.85] text-neutral-700">
         {children}
       </div>
     </section>
@@ -142,12 +142,12 @@ export function Para({ text }: { text: string }) {
   }
   const [, headline, body] = lead;
   return (
-    <div>
+    <div className="border-l-[3px] border-neutral-200 pl-[24px]">
       <p className="text-[25px] font-semibold leading-snug text-neutral-950">
         {headline.replace(/[.:]$/, "")}
       </p>
       {body && (
-        <p className="mt-[8px]">
+        <p className="mt-[10px]">
           <RichText text={body} />
         </p>
       )}
@@ -229,7 +229,7 @@ export function DeckLesson({
       <p className="text-[20px] font-medium uppercase tracking-[0.16em] text-neutral-400">
         {label}
       </p>
-      <div className="mt-[14px] space-y-[14px] text-[22px] leading-[1.7] text-neutral-800">
+      <div className="mt-[14px] space-y-[14px] text-[22px] leading-[1.8] text-neutral-800">
         {paragraphs.map((p, i) => (
           <Para key={i} text={p} />
         ))}
