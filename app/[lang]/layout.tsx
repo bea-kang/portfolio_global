@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Nav } from "@/components/Nav";
 import { ui } from "@/content/ui";
+import { CF_BEACON_TOKEN } from "@/lib/analytics";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 import { EMAIL, LINKEDIN_LABEL, LINKEDIN_URL } from "@/lib/profile";
 import "../globals.css";
@@ -106,6 +108,16 @@ export default async function RootLayout({
             </div>
           </div>
         </footer>
+        {/* Page views, referrers and countries, no cookies and no consent
+            banner. Loads after the page is interactive so it never delays
+            the first paint. */}
+        {CF_BEACON_TOKEN ? (
+          <Script
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            strategy="afterInteractive"
+            data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+          />
+        ) : null}
       </body>
     </html>
   );
