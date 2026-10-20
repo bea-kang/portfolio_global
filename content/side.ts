@@ -25,27 +25,6 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   en: [
     {
       number: "01",
-      title: "Public Bike App Usability",
-      period: "2019–2020",
-      background: [
-        "As more public services move into apps, people who aren't comfortable with apps can get locked out of them. Seoul's public bike service required the app for every rental and return, so I looked at how people in their 50s and 60s were actually using it.",
-      ],
-      action: [
-        "Designed and ran a survey of 100 people in their 50s and 60s to find what drives usage, splitting out variables such as physical limitations, how often they ride a regular bike, intent to use the service, and whether they own a bike.",
-        "The main barrier turned out to be the complexity of the app itself, not the bikes.",
-        "Drafted a UI improvement proposal and a step-by-step usage guide, requested approval from the responsible Seoul city department, and had the guide placed at a number of rental stations.",
-      ],
-      results: [
-        { label: "Survey respondents", value: "100 (ages 50–69)" },
-        { label: "Field rollout", value: "City-approved guide at stations" },
-      ],
-      lesson: [
-        "Sometimes the point where users drop off sits outside what you can change in the product. Without access to the app, a printed guide at the station still reached the people who were stuck.",
-      ],
-      media: [],
-    },
-    {
-      number: "02",
       title: "Repackaging Crowdfunding",
       period: "2019–2020",
       background: [
@@ -63,33 +42,65 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       lesson: [
         "When capital is short, finding something else the other side values can change the terms. It was small, but I ran every step of getting a product from an idea into a customer's hands.",
       ],
-      media: [],
+      media: [
+        {
+          src: "/images/side/stocking-package.jpg",
+          alt: "Gift packaging shaped like a letter envelope",
+          caption: "Gift packaging designed as a letter envelope",
+        },
+        {
+          src: "/images/side/stocking-page.jpg",
+          alt: "Part of the crowdfunding product page",
+          caption: "Part of the crowdfunding product page",
+        },
+      ],
+    },
+    {
+      number: "02",
+      title: "Public Bike App Usability",
+      period: "2019–2020",
+      background: [
+        "As more public services move into apps, people who aren't comfortable with apps can get locked out of them. Seoul's public bike service required the app for every rental and return, so I looked at how people in their 50s and 60s were actually using it.",
+      ],
+      action: [
+        "Designed and ran a survey of 100 people in their 50s and 60s to find what drives usage, splitting out variables such as physical limitations, how often they ride a regular bike, intent to use the service, and whether they own a bike.",
+        "The main barrier turned out to be the complexity of the app itself, not the bikes.",
+        "Drafted a UI improvement proposal and a step-by-step usage guide, requested approval from the responsible Seoul city department, and had the guide placed at a number of rental stations.",
+      ],
+      results: [
+        { label: "Survey respondents", value: "100 (ages 50–69)" },
+        { label: "Field rollout", value: "City-approved guide at stations" },
+      ],
+      lesson: [
+        "Sometimes the point where users drop off sits outside what you can change in the product. Without access to the app, a printed guide at the station still reached the people who were stuck.",
+      ],
+      media: [
+        {
+          src: "/images/side/bike-usage.png",
+          alt: "Seoul public bike usage by age group",
+          caption: "Public bike usage by age group",
+        },
+        {
+          src: "/images/side/bike-problem.png",
+          alt: "Top barriers from the survey and solutions by age group",
+          caption: "Top barriers from the survey, and a solution for each age group",
+        },
+        {
+          src: "/images/side/bike-guide.jpg",
+          alt: "Usage guide booklet pages",
+          caption: "Usage guide written for older riders",
+        },
+        {
+          src: "/images/side/bike-stations.jpg",
+          alt: "Guides placed at two rental stations",
+          caption: "Guides placed at rental stations (Jongno 3-ga Station Exit 2, Seoul Women's University south gate)",
+        },
+      ],
     },
   ],
   ko: [
     {
       number: "01",
-      title: "공공자전거 앱 사용성 개선",
-      period: "2019–2020",
-      background: [
-        "앱 서비스가 보편화되면서, 앱이 익숙하지 않은 사람은 공공 서비스에서도 밀려날 수 있다고 봤습니다. 서울시 공공자전거는 대여부터 반납까지 앱을 거쳐야 했고, 50~60대의 실제 이용 상황을 들여다봤습니다.",
-      ],
-      action: [
-        "50~60대 100명을 대상으로 설문을 설계·진행해 이용률에 영향을 주는 요인을 파악했습니다. 신체 제약, 일반 자전거 이용 빈도, 이용 의사, 자전거 보유 여부 등 변수를 나눠 검증했습니다.",
-        "이용을 막는 주된 원인은 자전거가 아니라 앱 서비스의 복잡도였습니다.",
-        "앱 UI 개선안과 이용 안내서를 만들고, 서울시 담당 부서에 허가를 요청해 일부 대여소에 안내서를 비치했습니다.",
-      ],
-      results: [
-        { label: "설문 응답", value: "50~60대 100명" },
-        { label: "현장 적용", value: "서울시 허가 후 대여소 비치" },
-      ],
-      lesson: [
-        "사용자가 막히는 지점이 제품 바깥에 있을 때도 있습니다. 앱을 고칠 권한이 없어도, 대여소의 안내서처럼 사용자에게 닿을 수 있는 수단으로 문제를 줄일 수 있었습니다.",
-      ],
-      media: [],
-    },
-    {
-      number: "02",
       title: "스타킹 리패키징 펀딩",
       period: "2019–2020",
       background: [
@@ -107,7 +118,60 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       lesson: [
         "자본이 부족해도 상대에게 줄 수 있는 다른 가치를 찾으면 조건을 바꿀 수 있었습니다. 작은 규모였지만, 상품이 기획에서 고객 손에 닿기까지의 전 과정을 직접 겪어봤습니다.",
       ],
-      media: [],
+      media: [
+        {
+          src: "/images/side/stocking-package.jpg",
+          alt: "편지 봉투 모양의 선물용 패키지",
+          caption: "편지 봉투 모양으로 만든 선물용 패키지",
+        },
+        {
+          src: "/images/side/stocking-page.jpg",
+          alt: "펀딩 상세 페이지 일부",
+          caption: "펀딩 상세 페이지 일부",
+        },
+      ],
+    },
+    {
+      number: "02",
+      title: "공공자전거 앱 사용성 개선",
+      period: "2019–2020",
+      background: [
+        "앱 서비스가 보편화되면서, 앱이 익숙하지 않은 사람은 공공 서비스에서도 밀려날 수 있다고 봤습니다. 서울시 공공자전거는 대여부터 반납까지 앱을 거쳐야 했고, 50~60대의 실제 이용 상황을 들여다봤습니다.",
+      ],
+      action: [
+        "50~60대 100명을 대상으로 설문을 설계·진행해 이용률에 영향을 주는 요인을 파악했습니다. 신체 제약, 일반 자전거 이용 빈도, 이용 의사, 자전거 보유 여부 등 변수를 나눠 검증했습니다.",
+        "이용을 막는 주된 원인은 자전거가 아니라 앱 서비스의 복잡도였습니다.",
+        "앱 UI 개선안과 이용 안내서를 만들고, 서울시 담당 부서에 허가를 요청해 일부 대여소에 안내서를 비치했습니다.",
+      ],
+      results: [
+        { label: "설문 응답", value: "50~60대 100명" },
+        { label: "현장 적용", value: "서울시 허가 후 대여소 비치" },
+      ],
+      lesson: [
+        "사용자가 막히는 지점이 제품 바깥에 있을 때도 있습니다. 앱을 고칠 권한이 없어도, 대여소의 안내서처럼 사용자에게 닿을 수 있는 수단으로 문제를 줄일 수 있었습니다.",
+      ],
+      media: [
+        {
+          src: "/images/side/bike-usage.png",
+          alt: "연령대별 따릉이 이용 현황 차트",
+          caption: "연령대별 따릉이 이용 현황",
+        },
+        {
+          src: "/images/side/bike-problem.png",
+          alt: "설문으로 꼽은 이용 장벽과 연령대별 해결 방안",
+          caption: "설문으로 꼽은 이용 장벽과 연령대별 해결 방안",
+        },
+        {
+          src: "/images/side/bike-guide.jpg",
+          alt: "이용 안내 책자 페이지",
+          caption: "어르신 눈높이에 맞춘 이용 안내 책자",
+        },
+        {
+          src: "/images/side/bike-stations.jpg",
+          alt: "대여소 두 곳에 비치한 안내 책자",
+          caption: "실제 비치 모습 (종로3가역 2번 출구 뒤, 서울여대 남문 대여소)",
+        },
+      ],
     },
   ],
 };

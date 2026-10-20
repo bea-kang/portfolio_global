@@ -98,20 +98,20 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
-        eyebrow: "Personal · Research",
-        title: "Public Bike App Usability",
-        period: "2019–2020",
-        blurb:
-          "Surveyed 100 people in their 50s and 60s to find what kept them off Seoul's public bikes, then got city approval to place a usage guide at rental stations.",
-        cta: "View project",
-      },
-      {
-        href: "/projects/side#case-02",
         eyebrow: "Personal · Commerce",
         title: "Repackaging Crowdfunding",
         period: "2019–2020",
         blurb:
           "Short on capital, I negotiated the manufacturer's minimum order down by half, then ran sourcing, sales, shipping, and CS myself.",
+        cta: "View project",
+      },
+      {
+        href: "/projects/side#case-02",
+        eyebrow: "Personal · Research",
+        title: "Public Bike App Usability",
+        period: "2019–2020",
+        blurb:
+          "Surveyed 100 people in their 50s and 60s to find what kept them off Seoul's public bikes, then got city approval to place a usage guide at rental stations.",
         cta: "View project",
       },
     ],
@@ -224,20 +224,20 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
-        eyebrow: "개인 프로젝트 · 리서치",
-        title: "공공자전거 앱 사용성 개선",
-        period: "2019–2020",
-        blurb:
-          "50~60대 100명 설문으로 공공자전거 이용을 막는 원인을 찾고, 서울시 허가를 받아 대여소에 이용 안내서를 비치했습니다.",
-        cta: "자세히 보기",
-      },
-      {
-        href: "/projects/side#case-02",
         eyebrow: "개인 프로젝트 · 커머스",
         title: "스타킹 리패키징 펀딩",
         period: "2019–2020",
         blurb:
           "자본금이 부족한 상황에서 생산 업체와 협상해 발주량을 절반으로 줄이고, 소싱부터 판매·발송·CS까지 직접 운영했습니다.",
+        cta: "자세히 보기",
+      },
+      {
+        href: "/projects/side#case-02",
+        eyebrow: "개인 프로젝트 · 리서치",
+        title: "공공자전거 앱 사용성 개선",
+        period: "2019–2020",
+        blurb:
+          "50~60대 100명 설문으로 공공자전거 이용을 막는 원인을 찾고, 서울시 허가를 받아 대여소에 이용 안내서를 비치했습니다.",
         cta: "자세히 보기",
       },
     ],
