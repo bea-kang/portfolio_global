@@ -46,6 +46,13 @@ export function Nav({ lang }: { lang: Locale }) {
           </div>
         </div>
       </div>
+
+      <Link
+        href={`/${lang}/projects/side`}
+        className="transition-colors hover:text-neutral-950"
+      >
+        {t.side}
+      </Link>
     </nav>
   );
 }

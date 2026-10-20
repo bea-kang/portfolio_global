@@ -19,6 +19,7 @@ export type UiDict = {
     methinks: string;
     methinksPm: string;
     methinksResearch: string;
+    side: string;
   };
   backgroundLabel: string;
   actionLabel: string;
@@ -26,5 +27,4 @@ export type UiDict = {
   referencesLabel: string;
   lessonLabel: string;
   emailCta: string;
-  pdfCta: string;
 };

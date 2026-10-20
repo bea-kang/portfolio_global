@@ -9,6 +9,7 @@ export const ui: Record<Locale, UiDict> = {
       methinks: "methinks",
       methinksPm: "PM (SaaS)",
       methinksResearch: "UX research",
+      side: "Side projects",
     },
     backgroundLabel: "Background",
     actionLabel: "Action",
@@ -16,7 +17,6 @@ export const ui: Record<Locale, UiDict> = {
     referencesLabel: "Coverage",
     lessonLabel: "Lesson learned",
     emailCta: "garding3@gmail.com",
-    pdfCta: "Download as PDF",
   },
   ko: {
     nav: {
@@ -25,6 +25,7 @@ export const ui: Record<Locale, UiDict> = {
       methinks: "methinks",
       methinksPm: "PM (SaaS)",
       methinksResearch: "UX research",
+      side: "사이드 프로젝트",
     },
     backgroundLabel: "배경",
     actionLabel: "액션",
@@ -32,6 +33,5 @@ export const ui: Record<Locale, UiDict> = {
     referencesLabel: "관련 링크",
     lessonLabel: "레슨런",
     emailCta: "garding3@gmail.com",
-    pdfCta: "PDF로 내려받기",
   },
 };

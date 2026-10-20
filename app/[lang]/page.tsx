@@ -131,6 +131,28 @@ export default async function Home({
           ))}
         </div>
       </section>
+
+      <section
+        id="side-projects"
+        className="mx-auto max-w-5xl scroll-mt-24 px-6 pb-16 sm:pb-24"
+      >
+        <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
+          {t.sideProjectsLabel}
+        </h2>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          {t.sideProjects.map((p) => (
+            <ProjectCard
+              key={p.href}
+              href={`/${lang}${p.href}`}
+              eyebrow={p.eyebrow}
+              title={p.title}
+              period={p.period}
+              blurb={p.blurb}
+              cta={p.cta}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
