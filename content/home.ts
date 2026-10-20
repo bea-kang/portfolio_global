@@ -87,10 +87,10 @@ export const home: Record<Locale, HomeContent> = {
     ],
     abroad: [
       {
-        org: "Gap year",
-        role: "Philippines · Canada",
-        period: "Mar 2026–Jul 2026",
-        note: "After leaving kakaostyle, I spent four months on English programs at SMEAG in the Philippines and CES in Canada. Along the way I joined PM meetups and got hands-on with AI tools.",
+        org: "Philippines · Canada",
+        role: "Language programs · Working in Canada",
+        period: "Mar 2026–Present",
+        note: "After leaving kakaostyle, I completed four months of English programs at SMEAG in the Philippines and CES in Canada. I'm now in Canada on a working holiday, working in customer service. Along the way I've joined PM meetups and gotten hands-on with AI tools.",
       },
     ],
     projectsLabel: "Projects",
@@ -213,10 +213,10 @@ export const home: Record<Locale, HomeContent> = {
     ],
     abroad: [
       {
-        org: "갭이어",
-        role: "필리핀 · 캐나다",
-        period: "2026.03–2026.07",
-        note: "카카오스타일 퇴사 후 4개월간 필리핀(SMEAG)과 캐나다(CES)에서 영어 과정을 밟았습니다. 그 기간 PM 모임에 참여하고 AI 툴을 직접 다루며 익혔습니다.",
+        org: "필리핀 · 캐나다",
+        role: "어학 과정 · 현지 근무",
+        period: "2026.03–현재",
+        note: "카카오스타일 퇴사 후 필리핀(SMEAG)과 캐나다(CES)에서 4개월간 영어 과정을 마쳤습니다. 지금은 캐나다에서 워킹홀리데이로 지내며 현지 고객 응대(customer service) 일을 하고 있습니다. 그 사이 PM 모임에 참여하고 AI 툴을 직접 다루며 익혔습니다.",
       },
     ],
     projectsLabel: "프로젝트",
