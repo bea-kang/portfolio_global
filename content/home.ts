@@ -10,8 +10,11 @@ export type HomeContent = {
   competencies: { title: string; body: string }[];
   experienceLabel: string;
   educationLabel: string;
+  abroadLabel: string;
   experience: { org: string; role: string; period: string }[];
   education: { org: string; role: string; period: string }[];
+  /** Shown under education. `note` is a short line of context, e.g. what a gap year was for. */
+  abroad: { org: string; role: string; period: string; note?: string }[];
   projectsLabel: string;
   projects: {
     href: string;
@@ -44,6 +47,7 @@ export const home: Record<Locale, HomeContent> = {
     ],
     experienceLabel: "Experience",
     educationLabel: "Education",
+    abroadLabel: "Time Abroad",
     experience: [
       {
         org: "kakaostyle",
@@ -76,6 +80,14 @@ export const home: Record<Locale, HomeContent> = {
         org: "Tsinghua University",
         role: "Exchange program",
         period: "Jul 2019–Jan 2020",
+      },
+    ],
+    abroad: [
+      {
+        org: "Gap year",
+        role: "Philippines · Canada",
+        period: "Mar 2026–Jul 2026",
+        note: "After leaving kakaostyle, I spent four months on English programs at SMEAG in the Philippines and CES in Canada. Along the way I joined PM meetups and got hands-on with AI tools.",
       },
     ],
     projectsLabel: "Projects",
@@ -140,6 +152,7 @@ export const home: Record<Locale, HomeContent> = {
     ],
     experienceLabel: "경력",
     educationLabel: "학력",
+    abroadLabel: "해외 경험",
     experience: [
       {
         org: "kakaostyle (카카오스타일)",
@@ -172,6 +185,14 @@ export const home: Record<Locale, HomeContent> = {
         org: "Tsinghua University",
         role: "교환학생",
         period: "2019.07–2020.01",
+      },
+    ],
+    abroad: [
+      {
+        org: "갭이어",
+        role: "필리핀 · 캐나다",
+        period: "2026.03–2026.07",
+        note: "카카오스타일 퇴사 후 4개월간 필리핀(SMEAG)과 캐나다(CES)에서 영어 과정을 밟았습니다. 그 기간 PM 모임에 참여하고 AI 툴을 직접 다루며 익혔습니다.",
       },
     ],
     projectsLabel: "프로젝트",

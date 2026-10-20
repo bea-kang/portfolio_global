@@ -13,7 +13,7 @@ function CredentialList({
   items,
 }: {
   label: string;
-  items: { org: string; role: string; period: string }[];
+  items: { org: string; role: string; period: string; note?: string }[];
 }) {
   return (
     <div>
@@ -30,6 +30,11 @@ function CredentialList({
             <span className="mt-0.5 block text-sm text-neutral-400">
               {item.period}
             </span>
+            {item.note && (
+              <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+                {item.note}
+              </p>
+            )}
           </div>
         ))}
       </div>
@@ -98,7 +103,10 @@ export default async function Home({
       >
         <div className="grid gap-12 sm:grid-cols-2">
           <CredentialList label={t.experienceLabel} items={t.experience} />
-          <CredentialList label={t.educationLabel} items={t.education} />
+          <div className="space-y-12">
+            <CredentialList label={t.educationLabel} items={t.education} />
+            <CredentialList label={t.abroadLabel} items={t.abroad} />
+          </div>
         </div>
       </section>
 
