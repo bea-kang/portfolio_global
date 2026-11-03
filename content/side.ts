@@ -29,11 +29,10 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
         "**Hypothesis:** if customers can see each salon's designs live on their own eyes, fewer drop off before booking, and salon owners save on consultation and complaint costs. The feature links from the salon's social bio and is monetized through usage fees such as a monthly subscription.",
       ],
       action: [
-        "Split the hypotheses into quality → consumer → salon, and decided not to build a later one if an earlier one fails. Wrote up research (competitors and market in Korea, Japan, Taiwan), concept, MVP scope, cost and roadmap, and the marketing plan first.",
-        "**Quality gate (Phase 0):** before building screens, built three rendering approaches and compared them: parametric rendering, generative compositing, and transferring lash pixels from the reference photo. Scored them with an automated vision-model judge (length, distribution, texture, density, realism, 1–5, averaged over three runs) and compared models and prompts against it. Generative models kept changing the eye and skin, so I cropped one eye and moved only the lashes.",
-        "**MVP scope cut:** the generative capture took 30–60 seconds and had to send the whole face to a server. Live compositing runs in the phone's browser, so the face never leaves the device. On privacy and speed, I dropped the capture and fixed the MVP as live-only.",
-        "**Entry points and revenue:** retail lashes are free presets; other salons' designs are limited to two tries a day. At the limit the user can request that salon, which builds a salon lead, and customers who arrive through a signed-up salon's link get unlimited tries. Consumer requests become the evidence for the salon sale.",
-        "**Validation channels:** posted the build as reels, used the insights to check the audience and drop-off point, and adjusted the next one. Currently sending a demo video to about ten lash salons in Canada for feedback.",
+        "Wrote up research (Korea, Japan, Taiwan), cost and roadmap, MVP, and marketing plan, and set up an agent that researches similar services so I notice when the direction needs to change.",
+        "**Live quality check:** before building screens, built three rendering approaches and compared them: parametric rendering, generative compositing, and transferring lash pixels from a reference. Automated a model judge (length, distribution, texture, density, realism) and compared results across AI models.",
+        "**Prototyping and pricing:** connected Figma Make to keep design in sync with development, and I'm deploying and iterating on it. Before gauging salon owners' demand, I worked out the AI model costs and set the fee at a minimum margin (14-day free trial, then KRW 29,000 a month).",
+        "I post the build process as reels and run a marketing agent that uses the insights to check the audience and drop-off points and feed them into the next one. I'm currently sending a demo video to about ten lash salons in Canada.",
       ],
       results: [
         { label: "Status", value: "Live-only MVP built · demo video out to ~10 lash salons in Canada for feedback" },
@@ -131,11 +130,10 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
         "**가설:** 소비자가 자신의 눈에 샵별 디자인을 라이브로 확인할 수 있는 경우 예약 전 이탈이 줄고, 샵 사장님은 상담·클레임 비용을 절약할 수 있다. 해당 기능을 SNS 바이오에 연동시키고 월 요금 등 사용 요금으로 수익화한다.",
       ],
       action: [
-        "품질 → 소비자 → 샵 순서로 가설을 나누고, 앞 가설이 깨지면 뒤는 만들지 않기로 했습니다. 리서치(국내·일본·대만 경쟁/시장), 컨셉, MVP 범위, 비용·로드맵, 마케팅 계획을 먼저 문서로 정리했습니다.",
-        "**품질 검증 (Phase 0):** 화면 개발 전에 렌더링 3방식(파라미터 렌더링, 생성형 합성, 레퍼런스 사진의 속눈썹 픽셀 이식)을 만들어 비교했습니다. 판정은 비전 모델 자동 심사(길이·분포·질감·밀도·실제감 1~5점, 3회 평균)로 통일하고 모델·프롬프트를 비교했습니다. 생성 모델이 눈 모양과 피부까지 바꾸는 문제는 눈 한쪽만 잘라 속눈썹만 옮기는 방식으로 해결했습니다.",
-        "**MVP 범위 축소:** 생성형 캡처는 30~60초가 걸리고 얼굴 전체를 서버로 보내야 했습니다. 라이브 합성은 폰 브라우저 안에서 처리돼 얼굴이 기기 밖으로 나가지 않습니다. 개인정보와 속도를 기준으로 캡처를 빼고 라이브 전용으로 확정했습니다.",
-        "**진입·수익 구조:** 시판 속눈썹은 무료 프리셋으로 제공하고, 다른 샵 디자인은 하루 2회로 제한했습니다. 한도에 닿으면 '이 샵에 요청하기'로 샵 리드를 쌓고, 가입한 샵의 링크로 들어온 고객은 무제한으로 쓰게 했습니다. 소비자 요청 수가 샵 영업 근거가 되는 구조입니다.",
-        "**검증 채널:** 개발 과정을 릴스로 올리고 인사이트로 타깃·이탈 구간을 확인해 다음 편에 반영했습니다. 현재 캐나다 래시 샵 10곳에 데모 영상을 보내 피드백을 받고 있습니다.",
+        "리서치(국내·일본·대만), 비용·로드맵, MVP 및 마케팅 계획을 정리하고 에이전트를 생성하여 유사 서비스를 리서치, 방향 수정이 필요한 경우 인지할 수 있도록 설계했습니다.",
+        "**live 품질 검증:** 화면 개발 전 렌더링 3방식(파라미터 렌더링, 생성형 합성, 레퍼런스 속눈썹 픽셀 이식)을 만들어 비교했습니다. 모델 심사(길이·분포·질감·밀도·실제감)를 자동화하고 AI별 결과값을 비교했습니다.",
+        "**프로토타이핑 및 프라이싱 설계:** Figma Make 연동을 통해 개발과 싱크하고 배포, 수정 중입니다. 뷰티샵 운영자의 수요 파악 전, AI 모델 사용 비용을 파악하고 최소 마진을 잡아 사용료를 책정했습니다. (14일 무료, 1개월 2만9천원)",
+        "개발 과정을 릴스로 업로드, 인사이트로 타깃·이탈 구간을 확인해 다음 편에 반영할 수 있도록 마케팅 에이전트를 운영하고 있습니다. 현재 캐나다 래시 샵 10곳에 데모 영상을 전송하고 있습니다.",
       ],
       results: [
         { label: "현재", value: "라이브 전용 MVP 완성 · 캐나다 래시 샵 10곳에 데모 영상 전달 중" },
