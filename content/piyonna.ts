@@ -35,9 +35,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
           {
             p: "K-beauty's popularity in Europe was rising, and with it beauty brands' appetite for selling abroad, so the company planned a new business line.",
           },
-          {
-            p: "The plan was to buy inventory from beauty brands listed on Zigzag and resell it to French customers. I joined on the condition of finishing the launch within three months of the date I gave notice.",
-          },
         ],
       },
       {
@@ -129,9 +126,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
           { gallery: true },
           {
             p: "유럽의 K뷰티 인기와 함께 뷰티 브랜드사의 해외 판매 니즈 역시 성장하고 있었고, 신사업 확장을 계획했습니다.",
-          },
-          {
-            p: "지그재그에 입점한 뷰티 브랜드를 프랑스 고객에게 매입 판매하는 계획으로, 퇴사를 통보한 시점으로부터 3개월간 런칭을 끝내는 조건으로 합류했습니다.",
           },
         ],
       },
