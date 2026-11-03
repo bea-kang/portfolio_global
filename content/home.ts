@@ -37,7 +37,7 @@ export const home: Record<Locale, HomeContent> = {
       [
         "Five years as a PM across a 7M MAU commerce platform, a new platform launch in France, and a B2B2C SaaS product. Lately I've been using AI to actively push out the boundary of what a single PM can cover. I want to work on products that stay connected to reality, and to widen the range of problems I can solve.",
       ],
-    availability: "Based in Seoul, South Korea · Open to relocation",
+    availability: "Based in Vancouver, Canada · Open to relocation",
     competencies: [
       {
         title: "I understand the product, the user, and the business",
@@ -87,10 +87,10 @@ export const home: Record<Locale, HomeContent> = {
     ],
     abroad: [
       {
-        org: "Philippines · Canada",
-        role: "Language programs · Working in Canada",
+        org: "Philippines, Canada",
+        role: "Language study and work abroad",
         period: "Mar 2026–Present",
-        note: "After leaving kakaostyle, I completed four months of English programs at SMEAG in the Philippines and CES in Canada. I'm now in Canada on a working holiday, working in customer service. Along the way I've joined PM meetups and gotten hands-on with AI tools.",
+        note: "After leaving, I spent four months in language school in the Philippines and Canada, and I'm now living in Canada and working in retail at COS. Alongside that, I network with local PMs, work on side projects, and tutor.",
       },
     ],
     projectsLabel: "Projects",
@@ -172,7 +172,7 @@ export const home: Record<Locale, HomeContent> = {
         "최근 AI를 통해 PM 1인이 커버할 수 있는 업무 경계를 적극적으로 확장하며 일하고 있습니다.",
         "현실과 닿아있는 프로덕트를 다루면서, 해결할 수 있는 문제를 확장하고 싶습니다.",
       ],
-    availability: "서울 거주 · 해외 이주 가능",
+    availability: "캐나다(밴쿠버) 거주 · 해외 이주 가능",
     competencies: [
       {
         title: "제품과 사용자, 비즈니스를 이해합니다",
@@ -222,10 +222,10 @@ export const home: Record<Locale, HomeContent> = {
     ],
     abroad: [
       {
-        org: "필리핀 · 캐나다",
-        role: "어학 과정 · 현지 근무",
+        org: "필리핀, 캐나다",
+        role: "어학 및 현지 근무",
         period: "2026.03–현재",
-        note: "카카오스타일 퇴사 후 필리핀(SMEAG)과 캐나다(CES)에서 4개월간 영어 과정을 마쳤습니다. 지금은 캐나다에서 워킹홀리데이로 지내며 현지 고객 응대(customer service) 일을 하고 있습니다. 그 사이 PM 모임에 참여하고 AI 툴을 직접 다루며 익혔습니다.",
+        note: "퇴사 후 필리핀 및 캐나다에서 4개월간 어학연수 후 캐나다 내 체류하며 리테일(COS)에서 근무하고 있습니다. 현지 PM 네트워킹 및 사이드 프로젝트, 튜터 활동을 병행하고 있습니다.",
       },
     ],
     projectsLabel: "프로젝트",

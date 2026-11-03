@@ -15,7 +15,7 @@ export function ProjectCard({
   period: string;
   blurb: string;
   cta: string;
-  /** Smaller card for the three-up side project gallery. */
+  /** Smaller card, without the eyebrow, for the three-up side project gallery. */
   compact?: boolean;
 }) {
   return (
@@ -26,11 +26,13 @@ export function ProjectCard({
       }`}
     >
       <div>
-        <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
-          {eyebrow}
-        </p>
+        {!compact && (
+          <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+            {eyebrow}
+          </p>
+        )}
         <h3
-          className={`mt-3 font-semibold tracking-tight ${
+          className={`${compact ? "" : "mt-3 "}font-semibold tracking-tight ${
             compact ? "text-lg" : "text-2xl sm:text-3xl"
           }`}
         >
