@@ -99,7 +99,7 @@ export default async function Home({
 
       <section
         id="experience"
-        className="mx-auto max-w-5xl scroll-mt-24 px-6 pb-16 pt-8"
+        className="mx-auto max-w-5xl scroll-mt-24 px-6 pb-8 pt-2"
       >
         <div className="grid gap-12 sm:grid-cols-2">
           <CredentialList label={t.experienceLabel} items={t.experience} />
