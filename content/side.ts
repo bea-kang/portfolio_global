@@ -22,7 +22,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
     {
       number: "01",
       title: "Live AI Try-on for Beauty Salons (B2B2C)",
-      period: "Sep 2026–Present",
+      period: "Oct 2026–Present",
       background: [
         "Lash extension results vary with the curl, length, and volume combination and with eye shape (monolid, hidden crease, eye-corner angle). Customers find a design and a salon, then stall at \"would this suit my eyes?\" and either drop off or book anxious. Salons absorb the complaints, consultation time, and redo costs. Existing tools were preset filters and in-chair consultation apps, so nothing in Korea or abroad let you see a salon's real design on your own eyes before visiting.",
         "**Hypothesis:** show the salon's real work on the customer's eyes live, and customers book with less anxiety while salons pay a monthly fee to cut consultation and claim costs. Building it solo with AI coding after leaving kakaostyle, validating Korea first, then Japan and Taiwan.",
@@ -123,7 +123,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
     {
       number: "01",
       title: "B2B2C 뷰티샵 전용 Live AI 서비스",
-      period: "2026.09–진행 중",
+      period: "2026.10–진행 중",
       background: [
         "속눈썹 연장은 컬·길이·숱 조합과 눈매(무쌍·속쌍·눈꼬리 각도)에 따라 결과가 달라집니다. 소비자는 디자인과 샵을 찾아두고도 \"내 눈에 어울릴까\"에서 멈춰 이탈하거나 불안한 채로 예약하고, 샵은 클레임·상담 시간·재시술 비용을 떠안습니다. 기존 도구는 프리셋 필터와 시술용 상담 툴뿐이라, 방문 전에 샵의 실제 디자인을 내 눈에 입혀보는 서비스는 국내외에 없었습니다.",
         "**가설:** 샵의 실제 시술 사진을 소비자 눈에 실시간으로 입혀주면, 소비자는 예약 전 불안이 줄고 샵은 상담·클레임 비용이 줄어 월 요금을 낸다. 퇴사 후 혼자 AI 코딩으로 개발하며 한국 → 일본·대만 순서로 검증하고 있습니다.",

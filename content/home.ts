@@ -103,7 +103,7 @@ export const home: Record<Locale, HomeContent> = {
         image: { src: "/images/side/thumb-lash.jpg", alt: "Live try-on demo: a salon's branded try-on page" },
         eyebrow: "Personal · B2B2C",
         title: "Live AI Try-on for Beauty Salons",
-        period: "Sep 2026–Present",
+        period: "Oct 2026–Present",
         blurb:
           "A B2B2C service that shows a salon's real lash design on your own eyes, live, before you book. Building it solo with AI and validating quality → consumers → salons, in that order.",
         cta: "View project",
@@ -240,7 +240,7 @@ export const home: Record<Locale, HomeContent> = {
         image: { src: "/images/side/thumb-lash.jpg", alt: "라이브 트라이온 데모: 샵 전용 트라이온 페이지" },
         eyebrow: "개인 프로젝트 · B2B2C",
         title: "뷰티샵 전용 Live AI 서비스",
-        period: "2026.09–진행 중",
+        period: "2026.10–진행 중",
         blurb:
           "샵의 실제 속눈썹 디자인을 예약 전에 내 눈에 실시간으로 입혀보는 B2B2C 서비스를 혼자 AI로 개발하며, 품질 → 소비자 → 샵 순서로 검증하고 있습니다.",
         cta: "자세히 보기",
