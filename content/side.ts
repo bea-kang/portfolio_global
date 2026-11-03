@@ -24,8 +24,9 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       title: "Live AI Try-on for Beauty Salons (B2B2C)",
       period: "Oct 2026–Present",
       background: [
-        "Lash extension results vary with the curl, length, and volume combination and with eye shape (monolid, hidden crease, eye-corner angle). Customers find a design and a salon, then stall at \"would this suit my eyes?\" and either drop off or book anxious. Salons absorb the complaints, consultation time, and redo costs. Existing tools were preset filters and in-chair consultation apps, so nothing in Korea or abroad let you see a salon's real design on your own eyes before visiting.",
-        "**Hypothesis:** show the salon's real work on the customer's eyes live, and customers book with less anxiety while salons pay a monthly fee to cut consultation and claim costs. Building it solo with AI coding after leaving kakaostyle, validating Korea first, then Japan and Taiwan.",
+        "With lash extensions, the same design can turn out very differently from one customer to the next. So customers often drop off right before booking or change the design during the consultation, which adds consultation time and redo costs.",
+        "I built a service that lets customers check a salon's design portfolio live on their own eyes before visiting, and book from there.",
+        "**Hypothesis:** if customers can see each salon's designs live on their own eyes, fewer drop off before booking, and salon owners save on consultation and complaint costs. The feature links from the salon's social bio and is monetized through usage fees such as a monthly subscription.",
       ],
       action: [
         "Split the hypotheses into quality → consumer → salon, and decided not to build a later one if an earlier one fails. Wrote up research (competitors and market in Korea, Japan, Taiwan), concept, MVP scope, cost and roadmap, and the marketing plan first.",
@@ -125,8 +126,9 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       title: "B2B2C 뷰티샵 전용 Live AI 서비스",
       period: "2026.10–진행 중",
       background: [
-        "속눈썹 연장은 컬·길이·숱 조합과 눈매(무쌍·속쌍·눈꼬리 각도)에 따라 결과가 달라집니다. 소비자는 디자인과 샵을 찾아두고도 \"내 눈에 어울릴까\"에서 멈춰 이탈하거나 불안한 채로 예약하고, 샵은 클레임·상담 시간·재시술 비용을 떠안습니다. 기존 도구는 프리셋 필터와 시술용 상담 툴뿐이라, 방문 전에 샵의 실제 디자인을 내 눈에 입혀보는 서비스는 국내외에 없었습니다.",
-        "**가설:** 샵의 실제 시술 사진을 소비자 눈에 실시간으로 입혀주면, 소비자는 예약 전 불안이 줄고 샵은 상담·클레임 비용이 줄어 월 요금을 낸다. 퇴사 후 혼자 AI 코딩으로 개발하며 한국 → 일본·대만 순서로 검증하고 있습니다.",
+        "속눈썹 연장은 고객에 따라 같은 디자인도 시술 결과 차이가 큽니다. 이에 예약 직전 이탈 또는 실제 상담시 디자인이 변경되는 경우가 많고, 상담 시간, 재시술 등 비용이 추가되는 구조입니다.",
+        "방문 전에 샵의 디자인 포트폴리오를 라이브로 확인해보고, 예약할 수 있는 서비스를 빌딩했습니다.",
+        "**가설:** 소비자가 자신의 눈에 샵별 디자인을 라이브로 확인할 수 있는 경우 예약 전 이탈이 줄고, 샵 사장님은 상담·클레임 비용을 절약할 수 있다. 해당 기능을 SNS 바이오에 연동시키고 월 요금 등 사용 요금으로 수익화한다.",
       ],
       action: [
         "품질 → 소비자 → 샵 순서로 가설을 나누고, 앞 가설이 깨지면 뒤는 만들지 않기로 했습니다. 리서치(국내·일본·대만 경쟁/시장), 컨셉, MVP 범위, 비용·로드맵, 마케팅 계획을 먼저 문서로 정리했습니다.",
