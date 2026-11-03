@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/i18n";
 import type { BulletItem } from "@/components/CaseStudy";
 
-/** `gallery` drops the live-storefront images into the section flow. */
+/** `gallery` puts the live-storefront images above that section. */
 export type PiyonnaBlock =
   | { p: string }
   | { ul: BulletItem[] }
@@ -17,7 +17,6 @@ export type PiyonnaContent = {
   sections: PiyonnaSection[];
   lessonLabel: string;
   lesson: string[];
-  liveCaption: string;
   liveCta: string;
 };
 
@@ -32,6 +31,7 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
       {
         title: "Background",
         blocks: [
+          { gallery: true },
           {
             p: "K-beauty's popularity in Europe was rising, and with it beauty brands' appetite for selling abroad, so the company planned a new business line.",
           },
@@ -99,7 +99,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
               },
             ],
           },
-          { gallery: true },
         ],
       },
       {
@@ -115,7 +114,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
     lesson: [
       "Spotting the grey zones on the way to launch and working through them myself is what shrank the line around my own job. AI keeps widening what a single PM can cover, so when the product's goal needs it, I would rather execute across that line than stop at it.",
     ],
-    liveCaption: "Live creative from piyonna.com, the storefront after launch.",
     liveCta: "Visit piyonna.com ↗",
   },
   ko: {
@@ -128,6 +126,7 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
       {
         title: "배경",
         blocks: [
+          { gallery: true },
           {
             p: "유럽의 K뷰티 인기와 함께 뷰티 브랜드사의 해외 판매 니즈 역시 성장하고 있었고, 신사업 확장을 계획했습니다.",
           },
@@ -195,7 +194,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
               },
             ],
           },
-          { gallery: true },
         ],
       },
       {
@@ -211,7 +209,6 @@ export const piyonna: Record<Locale, PiyonnaContent> = {
     lesson: [
       "PM으로서 런칭까지의 그레이존을 먼저 인식하고 직접 실행하면서, 업무의 경계를 줄여 나간 경험입니다. AI 기술과 함께 PM의 커버리지도 확장되는 만큼, 프로덕트의 목표를 위해 경계 없이 빠르게 실행하겠습니다.",
     ],
-    liveCaption: "런칭 후 실제 스토어 piyonna.com의 라이브 크리에이티브입니다.",
     liveCta: "piyonna.com 방문하기 ↗",
   },
 };

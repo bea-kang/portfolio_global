@@ -7,6 +7,7 @@ export function ProjectCard({
   period,
   blurb,
   cta,
+  image,
   compact = false,
 }: {
   href: string;
@@ -15,6 +16,7 @@ export function ProjectCard({
   period: string;
   blurb: string;
   cta: string;
+  image?: { src: string; alt: string };
   /** Smaller card, without the eyebrow, for the three-up side project gallery. */
   compact?: boolean;
 }) {
@@ -26,6 +28,14 @@ export function ProjectCard({
       }`}
     >
       <div>
+        {image && (
+          // eslint-disable-next-line @next/next/no-img-element -- static thumbnails, same as the case study images
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="mb-4 aspect-[16/10] w-full rounded-lg border border-neutral-100 object-cover"
+          />
+        )}
         {!compact && (
           <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
             {eyebrow}

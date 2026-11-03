@@ -204,12 +204,10 @@ export function Shot({
 
 export function LiveGallery({
   images,
-  caption,
   cta,
   href,
 }: {
   images: { src: string; alt: string }[];
-  caption: string;
   cta: string;
   href: string;
 }) {
@@ -226,8 +224,7 @@ export function LiveGallery({
           </div>
         ))}
       </div>
-      <div className="mt-5 flex flex-col items-center gap-3 text-center">
-        <p className="text-sm text-neutral-400">{caption}</p>
+      <div className="mt-5 flex justify-center">
         <a
           href={href}
           target="_blank"

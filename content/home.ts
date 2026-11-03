@@ -26,6 +26,8 @@ export type HomeContent = {
     period: string;
     blurb: string;
     cta: string;
+    /** Thumbnail on the side project cards. */
+    image?: { src: string; alt: string };
   }[];
 };
 
@@ -98,6 +100,7 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
+        image: { src: "/images/side/thumb-lash.jpg", alt: "Live try-on demo: a salon's branded try-on page" },
         eyebrow: "Personal · B2B2C",
         title: "Live AI Try-on for Beauty Salons",
         period: "Sep 2026–Present",
@@ -107,6 +110,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/side#case-02",
+        image: { src: "/images/side/thumb-stocking.jpg", alt: "Gift packaging shaped like a letter envelope" },
         eyebrow: "Personal · Commerce",
         title: "Repackaging Crowdfunding",
         period: "2019–2020",
@@ -116,6 +120,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/side#case-03",
+        image: { src: "/images/side/thumb-bike.jpg", alt: "Usage guide placed at a public bike rental station" },
         eyebrow: "Personal · Research",
         title: "Public Bike App Usability",
         period: "2019–2020",
@@ -232,6 +237,7 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
+        image: { src: "/images/side/thumb-lash.jpg", alt: "라이브 트라이온 데모: 샵 전용 트라이온 페이지" },
         eyebrow: "개인 프로젝트 · B2B2C",
         title: "뷰티샵 전용 Live AI 서비스",
         period: "2026.09–진행 중",
@@ -241,6 +247,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/side#case-02",
+        image: { src: "/images/side/thumb-stocking.jpg", alt: "편지 봉투 모양의 선물 패키지" },
         eyebrow: "개인 프로젝트 · 커머스",
         title: "스타킹 리패키징 펀딩",
         period: "2019–2020",
@@ -250,6 +257,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/side#case-03",
+        image: { src: "/images/side/thumb-bike.jpg", alt: "공공자전거 대여소에 비치한 이용 안내서" },
         eyebrow: "개인 프로젝트 · 리서치",
         title: "공공자전거 앱 사용성 개선",
         period: "2019–2020",

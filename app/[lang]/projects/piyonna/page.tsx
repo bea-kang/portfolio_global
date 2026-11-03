@@ -57,15 +57,14 @@ export default async function PiyonnaPage({
 
         return (
           <div key={section.title}>
-            <Section title={section.title} blocks={flow} />
             {hasGallery && (
               <LiveGallery
                 images={LIVE_IMAGES}
-                caption={t.liveCaption}
                 cta={t.liveCta}
                 href="https://piyonna.com"
               />
             )}
+            <Section title={section.title} blocks={flow} />
           </div>
         );
       })}

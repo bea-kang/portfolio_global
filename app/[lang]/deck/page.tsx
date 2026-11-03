@@ -247,9 +247,6 @@ export default async function DeckPage({ params }: PageProps<"/[lang]/deck">) {
           />
         ))}
       </div>
-      <p className="text-center text-[19px] leading-snug text-neutral-400">
-        {py.liveCaption}
-      </p>
       <p className="text-center">
         <a
           href="https://piyonna.com"

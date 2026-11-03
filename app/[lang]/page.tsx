@@ -149,6 +149,7 @@ export default async function Home({
               period={p.period}
               blurb={p.blurb}
               cta={p.cta}
+              image={p.image}
               compact
             />
           ))}
