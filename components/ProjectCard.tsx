@@ -16,7 +16,7 @@ export function ProjectCard({
   period: string;
   blurb: string;
   cta: string;
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; dim?: boolean };
   /** Smaller card, without the eyebrow, for the three-up side project gallery. */
   compact?: boolean;
 }) {
@@ -33,7 +33,11 @@ export function ProjectCard({
           <img
             src={image.src}
             alt={image.alt}
-            className="mb-4 aspect-[16/10] w-full rounded-lg border border-neutral-100 object-cover"
+            className={`mb-4 aspect-[16/10] w-full rounded-lg border border-neutral-100 object-cover ${
+              image.dim
+                ? "brightness-90 saturate-[0.85] transition-[filter] duration-300 group-hover:brightness-100 group-hover:saturate-100"
+                : ""
+            }`}
           />
         )}
         {!compact && (
