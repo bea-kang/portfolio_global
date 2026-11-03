@@ -106,15 +106,27 @@ export function Bullets({ items }: { items: BulletItem[] }) {
 
 export function StatGrid({
   stats,
+  asText = false,
 }: {
   stats: { label: string; value: string }[];
+  asText?: boolean;
 }) {
   return (
-    <dl className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+    <dl
+      className={
+        asText ? "space-y-4" : "grid grid-cols-2 gap-6 sm:grid-cols-3"
+      }
+    >
       {stats.map((stat) => (
         <div key={stat.label}>
           <dt className="text-sm text-neutral-500">{stat.label}</dt>
-          <dd className="mt-1 text-2xl font-semibold tracking-tight">
+          <dd
+            className={
+              asText
+                ? "mt-1 text-[17px] leading-relaxed text-neutral-800"
+                : "mt-1 text-2xl font-semibold tracking-tight"
+            }
+          >
             {stat.value}
           </dd>
         </div>

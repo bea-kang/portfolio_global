@@ -6,6 +6,9 @@ export type ZigzagCase = {
   action: string[];
   results: { label: string; value: string }[];
   resultsNote?: string;
+  /** Results are a sentence on where the project stands, not numbers,
+   * so they render at body size instead of as big stats. */
+  resultsAsText?: boolean;
   lesson: string[];
   media: { src: string; alt: string; caption?: string }[];
   /** One demo clip, shown after the images. */

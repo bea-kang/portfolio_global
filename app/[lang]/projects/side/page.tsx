@@ -77,7 +77,7 @@ export default async function SidePage({
               {t.resultsLabel}
             </h3>
             <div className="mt-4">
-              <StatGrid stats={c.results} />
+              <StatGrid stats={c.results} asText={c.resultsAsText} />
               {c.resultsNote && (
                 <p className="mt-4 text-sm text-neutral-500">
                   {c.resultsNote}
