@@ -39,7 +39,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
         { label: "Status", value: "Live-only MVP built · demo video out to ~10 lash salons in Canada for feedback" },
       ],
       resultsAsText: true,
-      video: { src: "/videos/lash-demo.mp4", caption: "Demo clip sent to lash salons in Canada: pick a design, see it on your own eyes live." },
+      video: { src: "/videos/lash-demo.mp4" },
       lesson: [
         "AI let me cover research, code, scoring, and content on my own, but what decided the product was what to leave out. The MVP settled once I cut the generative capture, the part I had worked hardest on, for privacy and speed. Now I keep a weekly decision log, including reversed decisions and why.",
       ],
@@ -141,7 +141,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
         { label: "현재", value: "라이브 전용 MVP 완성 · 캐나다 래시 샵 10곳에 데모 영상 전달 중" },
       ],
       resultsAsText: true,
-      video: { src: "/videos/lash-demo.mp4", caption: "캐나다 래시 샵에 보낸 데모 영상: 디자인을 고르면 내 눈에 실시간으로 올라갑니다." },
+      video: { src: "/videos/lash-demo.mp4" },
       lesson: [
         "AI로 리서치·개발·채점·콘텐츠를 혼자 커버할 수 있었지만, 제품을 결정한 건 무엇을 뺄지였습니다. 가장 공들인 생성형 캡처를 개인정보와 속도 기준으로 빼고 나서 MVP가 정리됐습니다. 지금은 매주 결정 로그를 남기고, 뒤집은 결정도 이유와 함께 기록합니다.",
       ],
