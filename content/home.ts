@@ -26,7 +26,7 @@ export type HomeContent = {
     period: string;
     blurb: string;
     cta: string;
-    /** Thumbnail on the side project cards. `dim` tones down a photo
+    /** Card cover. `dim` tones down a photo
      * that stands out too much next to the others. */
     image?: { src: string; alt: string; dim?: boolean };
   }[];
@@ -34,7 +34,7 @@ export type HomeContent = {
 
 export const home: Record<Locale, HomeContent> = {
   en: {
-    eyebrow: "Product Manager / Product Owner",
+    eyebrow: "Product Manager",
     name: "Yebeen (Bea) Kang",
     intro:
       [
@@ -44,11 +44,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "I understand the product, the user, and the business",
-        body: "A platform creates business opportunity by defining and solving users' problems. When that understanding is thin, it adds product complexity and operational load. I go to users directly, close the gaps in understanding, and define the problem precisely. From there I set the product's direction, fast.",
+        body: "With a clear understanding of users, I set the product's direction fast.",
       },
       {
         title: "I look for my own lessons learned",
-        body: "A PM has to raise the quality of both the product and the collaboration around it, which means retrospecting on experience and keeping the improvements coming. I wrote up what I learned and what fell short after every project, and built a team habit of retrospecting together.",
+        body: "I wrote up what I learned and what fell short after every project, and built a team habit of retrospecting together.",
       },
     ],
     experienceLabel: "Experience",
@@ -133,6 +133,7 @@ export const home: Record<Locale, HomeContent> = {
     projects: [
       {
         href: "/projects/piyonna",
+        image: { src: "/images/piyonna/live-2.jpg", alt: "Piyonna storefront campaign banner" },
         eyebrow: "kakaostyle · Global Beauty TF",
         title: "Piyonna",
         period: "Product Owner",
@@ -142,6 +143,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/zigzag",
+        image: { src: "/images/zigzag/cover.jpg", alt: "Zigzag first-purchase deal page" },
         eyebrow: "kakaostyle",
         title: "Zigzag",
         period: "Product Owner",
@@ -151,6 +153,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-pm",
+        image: { src: "/images/methinks/cover-pm.jpg", alt: "methinks research platform admin dashboard" },
         eyebrow: "methinks",
         title: "B2B2C Research Platform",
         period: "Associate PM · PM",
@@ -160,6 +163,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-research",
+        image: { src: "/images/methinks/cover-research.jpg", alt: "UX research report slide" },
         eyebrow: "methinks",
         title: "UX Research",
         period: "Intern Researcher",
@@ -170,7 +174,7 @@ export const home: Record<Locale, HomeContent> = {
     ],
   },
   ko: {
-    eyebrow: "Product Manager / Product Owner",
+    eyebrow: "Product Manager",
     name: "강예빈 (Bea Kang)",
     intro:
       [
@@ -181,11 +185,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "제품과 사용자, 비즈니스를 이해합니다",
-        body: "플랫폼은 사용자의 문제를 정의하고 해결해서 비즈니스 기회를 만듭니다. 이해도가 낮을 경우 제품 복잡도와 운영 부담을 늘립니다. 저는 사용자를 직접 찾아 이해도를 맞추고 문제를 명확하게 정의합니다. 높은 이해를 기반으로 빠르게 제품 방향을 정합니다.",
+        body: "높은 이해를 기반으로 빠르게 제품 방향을 정합니다.",
       },
       {
         title: "스스로 레슨런을 찾습니다",
-        body: "PM은 제품, 협업의 질을 높여야 합니다. 경험을 회고하며 개선점을 찾아 나가야 합니다. 프로젝트마다 배운점, 아쉬운 점을 스스로 정리했고, 팀원과 회고하는 업무 문화를 만들었습니다.",
+        body: "프로젝트마다 배운점, 아쉬운 점을 스스로 정리했고, 팀원과 회고하는 업무 문화를 만들었습니다.",
       },
     ],
     experienceLabel: "경력",
@@ -270,6 +274,7 @@ export const home: Record<Locale, HomeContent> = {
     projects: [
       {
         href: "/projects/piyonna",
+        image: { src: "/images/piyonna/live-2.jpg", alt: "피어나 스토어 캠페인 배너" },
         eyebrow: "kakaostyle · 글로벌 뷰티 TF",
         title: "Piyonna (피어나)",
         period: "Product Owner",
@@ -279,6 +284,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/zigzag",
+        image: { src: "/images/zigzag/cover.jpg", alt: "지그재그 첫구매딜 화면" },
         eyebrow: "kakaostyle",
         title: "Zigzag (지그재그)",
         period: "Product Owner",
@@ -288,6 +294,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-pm",
+        image: { src: "/images/methinks/cover-pm.jpg", alt: "methinks 리서치 플랫폼 어드민 화면" },
         eyebrow: "methinks",
         title: "B2B2C 리서치 플랫폼",
         period: "Associate PM · PM",
@@ -297,6 +304,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-research",
+        image: { src: "/images/methinks/cover-research.jpg", alt: "UX 리서치 리포트 슬라이드" },
         eyebrow: "methinks",
         title: "UX 리서치",
         period: "Intern Researcher",
