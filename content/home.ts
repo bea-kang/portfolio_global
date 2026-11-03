@@ -106,7 +106,7 @@ export const home: Record<Locale, HomeContent> = {
         title: "Live AI Try-on for Beauty Salons",
         period: "Oct 2026–Present",
         blurb:
-          "A B2B2C service that shows a salon's real lash design on your own eyes, live, before you book. Building it solo with AI and validating quality → consumers → salons, in that order.",
+          "A service for trying a salon's lash designs live before booking. I'm building the whole thing: planning, development, user validation, and content.",
         cta: "View project",
       },
       {
@@ -243,7 +243,7 @@ export const home: Record<Locale, HomeContent> = {
         title: "뷰티샵 전용 Live AI 서비스",
         period: "2026.10–진행 중",
         blurb:
-          "샵의 실제 속눈썹 디자인을 예약 전에 내 눈에 실시간으로 입혀보는 B2B2C 서비스를 혼자 AI로 개발하며, 품질 → 소비자 → 샵 순서로 검증하고 있습니다.",
+          "뷰티샵의 속눈썹 디자인을 예약 전 실시간으로 체험해보는 서비스로, 기획, 개발, 사용자 검증 및 콘텐츠 생성까지 전 과정 빌딩을 담당하고 있습니다.",
         cta: "자세히 보기",
       },
       {
