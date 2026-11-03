@@ -143,7 +143,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/zigzag",
-        image: { src: "/images/zigzag/cover.jpg", alt: "Zigzag first-purchase deal page" },
+        image: { src: "/images/zigzag/cover.jpg", alt: "Zigzag coupon screen recommending items to unlock a bigger discount" },
         eyebrow: "kakaostyle",
         title: "Zigzag",
         period: "Product Owner",
@@ -163,7 +163,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-research",
-        image: { src: "/images/methinks/cover-research.jpg", alt: "UX research report slide" },
+        image: { src: "/images/methinks/cover-research.jpg", alt: "Signup and remittance screens from a moin UX evaluation" },
         eyebrow: "methinks",
         title: "UX Research",
         period: "Intern Researcher",
@@ -284,7 +284,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/zigzag",
-        image: { src: "/images/zigzag/cover.jpg", alt: "지그재그 첫구매딜 화면" },
+        image: { src: "/images/zigzag/cover.jpg", alt: "지그재그 상향 쿠폰 추천 화면" },
         eyebrow: "kakaostyle",
         title: "Zigzag (지그재그)",
         period: "Product Owner",
@@ -304,7 +304,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         href: "/projects/methinks-research",
-        image: { src: "/images/methinks/cover-research.jpg", alt: "UX 리서치 리포트 슬라이드" },
+        image: { src: "/images/methinks/cover-research.jpg", alt: "moin UX 평가의 회원가입·송금 화면" },
         eyebrow: "methinks",
         title: "UX 리서치",
         period: "Intern Researcher",
