@@ -89,7 +89,7 @@ export default async function Home({
               <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
                 {c.title}
               </h2>
-              <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">
+              <p className="mt-4 text-[17px] leading-relaxed text-neutral-700">
                 <RichText text={c.body} />
               </p>
             </div>

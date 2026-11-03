@@ -43,11 +43,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "I understand the product, the user, and the business",
-        body: "I go to users directly to define the problem clearly, and set the product's direction fast from there.",
+        body: "A platform creates business opportunity by defining and solving users' problems. When that understanding is thin, it adds product complexity and operational load. I go to users directly, close the gaps in understanding, and define the problem precisely. From there I set the product's direction, fast.",
       },
       {
         title: "I look for my own lessons learned",
-        body: "I wrote up what I learned and what fell short after every project, and built a team habit of retrospecting together.",
+        body: "A PM has to raise the quality of both the product and the collaboration around it, which means retrospecting on experience and keeping the improvements coming. I wrote up what I learned and what fell short after every project, and built a team habit of retrospecting together.",
       },
     ],
     experienceLabel: "Experience",
@@ -180,11 +180,11 @@ export const home: Record<Locale, HomeContent> = {
     competencies: [
       {
         title: "제품과 사용자, 비즈니스를 이해합니다",
-        body: "사용자를 직접 찾아 문제를 명확하게 정의하고, 이를 기반으로 빠르게 제품 방향을 정합니다.",
+        body: "플랫폼은 사용자의 문제를 정의하고 해결해서 비즈니스 기회를 만듭니다. 이해도가 낮을 경우 제품 복잡도와 운영 부담을 늘립니다. 저는 사용자를 직접 찾아 이해도를 맞추고 문제를 명확하게 정의합니다. 높은 이해를 기반으로 빠르게 제품 방향을 정합니다.",
       },
       {
         title: "스스로 레슨런을 찾습니다",
-        body: "프로젝트마다 배운 점과 아쉬운 점을 스스로 정리했고, 팀원과 회고하는 업무 문화를 만들었습니다.",
+        body: "PM은 제품, 협업의 질을 높여야 합니다. 경험을 회고하며 개선점을 찾아 나가야 합니다. 프로젝트마다 배운점, 아쉬운 점을 스스로 정리했고, 팀원과 회고하는 업무 문화를 만들었습니다.",
       },
     ],
     experienceLabel: "경력",
