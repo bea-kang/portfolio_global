@@ -98,11 +98,11 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
-        eyebrow: "Personal · AI product",
-        title: "Lash Extension Virtual Try-on",
+        eyebrow: "Personal · B2B2C",
+        title: "Live AI Try-on for Beauty Salons",
         period: "Sep 2026–Present",
         blurb:
-          "Lets you see a salon's real lash design on your own eyes, live, before you book. Building it solo with AI, validating quality, then consumers, then salons, in that order.",
+          "A B2B2C service that shows a salon's real lash design on your own eyes, live, before you book. Building it solo with AI and validating quality → consumers → salons, in that order.",
         cta: "View project",
       },
       {
@@ -233,11 +233,11 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
-        eyebrow: "개인 프로젝트 · AI 프로덕트",
-        title: "속눈썹 가상 체험 서비스",
+        eyebrow: "개인 프로젝트 · B2B2C",
+        title: "뷰티샵 전용 Live AI 서비스",
         period: "2026.09–진행 중",
         blurb:
-          "샵의 실제 속눈썹 디자인을 예약 전에 내 눈에 실시간으로 입혀보는 서비스입니다. 혼자 AI로 개발하며 품질 → 소비자 → 샵 순서로 검증하고 있습니다.",
+          "샵의 실제 속눈썹 디자인을 예약 전에 내 눈에 실시간으로 입혀보는 B2B2C 서비스를 혼자 AI로 개발하며, 품질 → 소비자 → 샵 순서로 검증하고 있습니다.",
         cta: "자세히 보기",
       },
       {

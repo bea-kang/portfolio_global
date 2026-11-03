@@ -25,25 +25,26 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   en: [
     {
       number: "01",
-      title: "Lash Extension Virtual Try-on",
+      title: "Live AI Try-on for Beauty Salons (B2B2C)",
       period: "Sep 2026–Present",
       background: [
-        "The same lash design comes out differently depending on eye shape. Customers find a design and a salon they like, then stall at \"would this suit my eyes?\". Salons absorb the \"it's not what I pictured\" complaints and the consultation time. Preset filters and in-chair consultation tools exist, but nothing lets you see a specific salon's real design on your own eyes before you visit.",
-        "After leaving kakaostyle I started building it alone, writing the code with Claude Code. The plan is to validate in Korea first, then Japan and Taiwan.",
+        "Lash extensions vary a lot with the curl, length, and volume combination, and the same design looks different on each eye shape (monolid, hidden crease, eye-corner angle). Customers find a design and a salon on Instagram, then stall at \"would this suit my eyes?\" and either drop off or book anxious. Salons absorb the \"it's not what I pictured\" complaints, consultation time, and redo costs. The existing tools were preset-only filters and in-chair consultation apps for the artist, so nothing let you see a specific salon's real design on your own eyes before visiting, in Korea or abroad.",
+        "**Hypothesis:** show the salon's real work on the customer's eyes live, and customers book with less anxiety while salons pay a monthly fee to cut consultation and claim costs. Building it solo with AI coding after leaving kakaostyle, validating Korea first, then Japan and Taiwan.",
       ],
       action: [
-        "**Set the order of validation.** Quality (does it look like my eyes?) → consumers (do they want it enough to turn on the camera?) → salons (will they attach the link and pay monthly?). If an earlier hypothesis fails, the later ones don't get built.",
-        "**Tested the quality hypothesis with spikes, not screens.** Built three rendering approaches side by side: parametric rendering, generative compositing, and transferring lash pixels from the reference photo. Replaced eyeballing with an automated vision-model judge (length, distribution, texture, density, realism, 1–5), and stopped generative models from redrawing the eye and skin by cropping one eye and moving only the lashes.",
-        "**Cut the MVP down to live-only.** The generative capture took 30–60 seconds and sent the whole face to a server; the live layer runs entirely in the phone's browser, so the face never leaves the device. Working through the privacy question made the choice clear, and the capture came out of the MVP.",
-        "**Designed the entry points and the revenue structure.** Retail lashes are free presets; another salon's design is limited to two tries a day, and at the limit the user can request that salon, which becomes a lead. Once a salon signs up, its customers get unlimited tries. Consumer traffic is the evidence for the B2B2C sale.",
-        "**Posted the build in public.** The first reel's insights showed the right audience was watching but nobody saved or shared it, so the next cut opens on the result close-up in the first second.",
+        "Split the hypotheses into quality → consumer → salon, and scoped the work so a later one is not built if an earlier one fails. Wrote up research (competitors and market in Korea, Japan, Taiwan), concept, MVP scope, cost and roadmap, and the marketing plan first.",
+        "**Quality gate (Phase 0):** before any screens, built three rendering approaches as spikes side by side: parametric rendering, generative compositing, and transferring lash pixels from the reference photo. Replaced eyeballing with an automated vision-model judge (length, distribution, texture, density, realism, 1–5, averaged over three runs) and iterated model and prompt comparisons against it. Generative models kept redrawing the eye and skin, so I cropped one eye and moved only the lashes.",
+        "**MVP scope cut:** the generative capture took 30–60 seconds and had to send the whole face to a server. The live compositing runs entirely in the phone's browser, so the face never leaves the device. On privacy load and perceived speed, I dropped the capture and fixed the MVP as live-only.",
+        "**Entry points and revenue:** retail lashes are free presets; another salon's design is limited to two tries a day. At the limit the user can request that salon, which accumulates as a lead; once the salon signs up, customers arriving through its link get unlimited tries, so consumer requests become the evidence for the salon sale.",
+        "**Validation channels:** posted the build as reels and used the insights to check the audience and the drop-off point, then adjusted the next cut. Currently sending a demo video to about ten lash salons in Canada for feedback.",
       ],
       results: [
         { label: "Status", value: "Live-only MVP built · demo video out to ~10 lash salons in Canada for feedback" },
       ],
       resultsNote: "In progress. No outcome numbers yet.",
+      video: { src: "/videos/lash-demo.mp4", caption: "Demo clip sent to lash salons in Canada: pick a design, see it on your own eyes live." },
       lesson: [
-        "With AI I could run research, code, scoring, and content on my own, but the decision that mattered most was still what to leave out. The generative capture was the part I had worked hardest on, and once privacy and perceived speed were on the table, live alone was enough. I now keep a weekly decision log, including the decisions I reversed and why.",
+        "With AI I could cover research, code, scoring, and content on my own, but what decided the product was what to leave out. The MVP only settled once I cut the generative capture, the part I had worked hardest on, against privacy and speed. Since then I keep a weekly decision log, including the decisions I reversed and why.",
       ],
       media: [],
     },
@@ -125,25 +126,26 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   ko: [
     {
       number: "01",
-      title: "속눈썹 가상 체험 서비스",
+      title: "B2B2C 뷰티샵 전용 Live AI 서비스",
       period: "2026.09–진행 중",
       background: [
-        "속눈썹 연장은 같은 디자인도 눈매에 따라 다르게 나옵니다. 소비자는 마음에 드는 디자인과 샵을 찾아두고도 \"내 눈에 어울릴까\"에서 멈추고, 샵은 \"생각과 다르다\"는 클레임과 상담 시간을 떠안습니다. 프리셋 필터나 원장용 상담 툴은 있지만, 방문 전에 그 샵의 실제 디자인을 내 눈에 입혀보는 서비스는 없었습니다.",
-        "퇴사 후 혼자, Claude Code로 코드를 쓰며 만들고 있습니다. 한국에서 먼저 검증하고 일본·대만으로 넓히는 계획입니다.",
+        "속눈썹 연장은 컬·길이·숱 조합에 따라 결과가 크게 다르고, 같은 디자인도 눈매(무쌍·속쌍·눈꼬리 각도)에 따라 다르게 나옵니다. 소비자는 인스타에서 디자인과 샵까지 찾아두고도 \"내 눈에 어울릴까\"에서 멈춰 이탈하거나 불안한 채로 예약하고, 샵은 \"생각과 다르다\"는 클레임과 상담 시간, 재시술 비용을 떠안습니다. 기존 도구는 프리셋만 입히는 필터와 원장이 시술 자리에서 쓰는 상담 툴뿐이라, 방문 전에 그 샵의 실제 디자인을 내 눈에 입혀보는 서비스는 국내외에 없었습니다.",
+        "**가설:** 샵의 실제 시술 사진을 소비자 눈에 실시간으로 입혀주면, 소비자는 예약 전 불안이 줄고 샵은 상담·클레임 비용이 줄어 월 요금을 낸다. 퇴사 후 혼자 AI 코딩으로 개발하며 한국 → 일본·대만 순서로 검증하고 있습니다.",
       ],
       action: [
-        "**검증 순서를 정했습니다.** 품질(내 눈 같다고 납득되나) → 소비자(카메라를 켤 만큼 원하나) → 샵(링크를 붙이고 월 요금을 내나) 순서로, 앞 가설이 깨지면 뒤는 만들지 않기로 했습니다.",
-        "**품질 가설은 화면보다 스파이크로 먼저 검증했습니다.** 파라미터 렌더링, 생성형 합성, 레퍼런스 사진의 속눈썹 픽셀 이식 세 방식을 같이 만들어 비교했습니다. 눈대중 대신 비전 모델 자동 심사(길이·분포·질감·밀도·실제감 1~5점)로 결정했고, 생성 모델이 눈 모양과 피부까지 바꾸는 문제는 눈 한쪽만 잘라 속눈썹만 떼어 옮기는 구조로 막았습니다.",
-        "**MVP를 라이브 전용으로 줄였습니다.** 생성형 캡처는 30~60초가 걸리고 얼굴 전체가 서버로 갔습니다. 라이브는 폰 브라우저 안에서만 돌아 얼굴이 기기 밖으로 나가지 않습니다. 개인정보 질문에 답하다 이 구조가 낫다고 판단해 캡처를 MVP에서 뺐습니다.",
-        "**진입 구조와 수익 구조를 설계했습니다.** 시판 속눈썹은 무료 프리셋, 남의 샵 디자인은 하루 2회까지. 한도에 닿으면 '이 샵에 요청하기'로 샵 리드를 만들고, 샵이 가입하면 그 샵 고객은 무제한입니다. 소비자 트래픽이 샵 영업의 근거가 되는 B2B2C 구조입니다.",
-        "**만드는 과정을 콘텐츠로 올렸습니다.** 첫 릴스 인사이트에서 타깃 연령은 맞았지만 저장·공유가 없어서, 다음 편은 첫 1초를 결과 접사로 시작하도록 바꿨습니다.",
+        "품질 → 소비자 → 샵 순서로 가설을 나누고, 앞 가설이 깨지면 뒤는 만들지 않는 것으로 범위를 잡았습니다. 리서치(국내·일본·대만 경쟁/시장), 컨셉, MVP 범위, 비용·로드맵, 마케팅 계획을 문서로 먼저 정리했습니다.",
+        "**품질 검증 (Phase 0):** 화면을 만들기 전에 렌더링 3방식(파라미터 렌더링, 생성형 합성, 레퍼런스 사진의 속눈썹 픽셀 이식)을 스파이크로 같이 만들어 비교했습니다. 판정은 눈대중 대신 비전 모델 자동 심사(길이·분포·질감·밀도·실제감 1~5점, 3회 평균)로 통일해 모델·프롬프트 비교를 반복했습니다. 생성 모델이 눈 모양과 피부까지 바꾸는 문제는 눈 한쪽만 잘라 속눈썹만 떼어 옮기는 구조로 해결했습니다.",
+        "**MVP 범위 축소:** 생성형 캡처는 30~60초가 걸리고 얼굴 전체를 서버로 보내야 했습니다. 라이브 합성은 폰 브라우저 안에서만 돌아 얼굴이 기기 밖으로 나가지 않아, 개인정보 부담과 체감 속도를 기준으로 캡처를 빼고 라이브 전용으로 확정했습니다.",
+        "**진입·수익 구조:** 시판 속눈썹은 무료 프리셋으로 제공하고, 남의 샵 디자인은 하루 2회로 제한했습니다. 한도에 닿으면 '이 샵에 요청하기'로 샵 리드를 쌓고, 샵이 가입하면 그 샵 링크로 들어온 고객은 무제한으로 쓰게 해 소비자 요청 수가 샵 영업 근거가 되도록 설계했습니다.",
+        "**검증 채널:** 만드는 과정을 릴스로 올리고 인사이트로 타깃·이탈 구간을 확인해 다음 편 구성을 조정했습니다. 현재 캐나다 래시 샵 10곳에 데모 영상을 보내 피드백을 받고 있습니다.",
       ],
       results: [
         { label: "현재", value: "라이브 전용 MVP 완성 · 캐나다 래시 샵 10곳에 데모 영상 전달 중" },
       ],
       resultsNote: "진행 중인 프로젝트라 결과 지표는 아직 없습니다.",
+      video: { src: "/videos/lash-demo.mp4", caption: "캐나다 래시 샵에 보낸 데모 영상: 디자인을 고르면 내 눈에 실시간으로 올라갑니다." },
       lesson: [
-        "AI 덕에 리서치·개발·채점·콘텐츠까지 혼자 돌릴 수 있었지만, 가장 중요한 결정은 여전히 '무엇을 뺄까'였습니다. 생성형 캡처는 가장 공들인 부분이었는데, 개인정보와 체감 속도를 놓고 보니 라이브만으로 충분했습니다. 지금은 매주 결정 로그를 남기고, 뒤집은 결정도 이유와 함께 적어둡니다.",
+        "혼자서도 AI로 리서치·개발·채점·콘텐츠까지 커버할 수 있었지만, 제품을 결정한 건 '무엇을 뺄까'였습니다. 가장 공들인 생성형 캡처를 개인정보와 속도 기준으로 빼고 나서야 MVP가 정리됐습니다. 이후로는 결정 로그를 매주 남기고, 뒤집은 결정도 이유와 함께 기록합니다.",
       ],
       media: [],
     },

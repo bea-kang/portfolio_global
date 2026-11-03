@@ -6,6 +6,7 @@ import {
   Lesson,
   RefLinks,
   RefShots,
+  CaseVideo,
   Section,
   StatGrid,
 } from "@/components/CaseStudy";
@@ -86,6 +87,7 @@ export default async function SidePage({
           </div>
 
           {c.media.length > 0 && <RefShots shots={c.media} />}
+          {c.video && <CaseVideo video={c.video} />}
 
           {c.links && (
             <RefLinks label={t.referencesLabel} links={c.links} />

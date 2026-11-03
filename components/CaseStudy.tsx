@@ -246,6 +246,30 @@ export function LiveGallery({
  * dense admin/app captures, and three across is too small to read. In print
  * the column is narrower than any screen the site was designed for, so they
  * drop to one per row rather than shrink to illegible. */
+export function CaseVideo({ video }: { video: { src: string; caption?: string } }) {
+  return (
+    <div className="mx-auto max-w-4xl px-6 py-4">
+      <figure className="mx-auto max-w-2xl">
+        <div className="overflow-hidden rounded-xl border border-neutral-200 bg-neutral-50">
+          <video
+            src={video.src}
+            className="block h-auto w-full"
+            controls
+            muted
+            playsInline
+            preload="metadata"
+          />
+        </div>
+        {video.caption && (
+          <figcaption className="mt-2 text-xs leading-snug text-neutral-400">
+            {video.caption}
+          </figcaption>
+        )}
+      </figure>
+    </div>
+  );
+}
+
 export function RefShots({
   shots,
 }: {

@@ -8,6 +8,8 @@ export type ZigzagCase = {
   resultsNote?: string;
   lesson: string[];
   media: { src: string; alt: string; caption?: string }[];
+  /** One demo clip, shown after the images. */
+  video?: { src: string; caption?: string };
   /** External coverage / write-ups about the project. */
   links?: { source: string; title: string; href: string }[];
 };
