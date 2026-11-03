@@ -44,7 +44,8 @@ export function ProjectCard({
   cta: string;
   image?: CardImage;
   /** Smaller card, without the eyebrow, for the three-up side project gallery.
-   * Without it the card is a wide row: cover on the left, text on the right. */
+   * Without it the card is a wide row: cover on the left (muted until hover),
+   * text on the right. */
   compact?: boolean;
 }) {
   if (compact) {
@@ -72,17 +73,17 @@ export function ProjectCard({
   return (
     <Link
       href={href}
-      className="group grid overflow-hidden rounded-2xl border border-neutral-200 transition-colors hover:border-neutral-950 sm:h-56 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]"
+      className="group grid overflow-hidden rounded-2xl border border-neutral-200 transition-colors hover:border-neutral-950 sm:h-48 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]"
     >
       {image && (
         <div className="aspect-[16/10] overflow-hidden border-b border-neutral-200 bg-neutral-50 sm:aspect-auto sm:border-b-0 sm:border-r">
           <Cover
             image={image}
-            className="h-full w-full transition-transform duration-500 group-hover:scale-[1.03]"
+            className="h-full w-full brightness-95 saturate-[0.55] transition duration-500 group-hover:scale-[1.03] group-hover:brightness-100 group-hover:saturate-100"
           />
         </div>
       )}
-      <div className="flex flex-col justify-center p-6 sm:px-8">
+      <div className="flex flex-col justify-center p-6 sm:px-8 sm:py-5">
         <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
           {eyebrow} · {period}
         </p>
