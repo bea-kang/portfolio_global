@@ -98,6 +98,15 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
+        eyebrow: "Personal · AI product",
+        title: "Lash Extension Virtual Try-on",
+        period: "Sep 2026–Present",
+        blurb:
+          "Lets you see a salon's real lash design on your own eyes, live, before you book. Building it solo with AI, validating quality, then consumers, then salons, in that order.",
+        cta: "View project",
+      },
+      {
+        href: "/projects/side#case-02",
         eyebrow: "Personal · Commerce",
         title: "Repackaging Crowdfunding",
         period: "2019–2020",
@@ -106,7 +115,7 @@ export const home: Record<Locale, HomeContent> = {
         cta: "View project",
       },
       {
-        href: "/projects/side#case-02",
+        href: "/projects/side#case-03",
         eyebrow: "Personal · Research",
         title: "Public Bike App Usability",
         period: "2019–2020",
@@ -224,6 +233,15 @@ export const home: Record<Locale, HomeContent> = {
     sideProjects: [
       {
         href: "/projects/side#case-01",
+        eyebrow: "개인 프로젝트 · AI 프로덕트",
+        title: "속눈썹 가상 체험 서비스",
+        period: "2026.09–진행 중",
+        blurb:
+          "샵의 실제 속눈썹 디자인을 예약 전에 내 눈에 실시간으로 입혀보는 서비스입니다. 혼자 AI로 개발하며 품질 → 소비자 → 샵 순서로 검증하고 있습니다.",
+        cta: "자세히 보기",
+      },
+      {
+        href: "/projects/side#case-02",
         eyebrow: "개인 프로젝트 · 커머스",
         title: "스타킹 리패키징 펀딩",
         period: "2019–2020",
@@ -232,7 +250,7 @@ export const home: Record<Locale, HomeContent> = {
         cta: "자세히 보기",
       },
       {
-        href: "/projects/side#case-02",
+        href: "/projects/side#case-03",
         eyebrow: "개인 프로젝트 · 리서치",
         title: "공공자전거 앱 사용성 개선",
         period: "2019–2020",

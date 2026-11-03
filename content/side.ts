@@ -25,6 +25,33 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   en: [
     {
       number: "01",
+      title: "Lash Extension Virtual Try-on",
+      period: "Sep 2026–Present",
+      background: [
+        "The same lash design comes out differently depending on eye shape. Customers find a design and a salon they like, then stall at \"would this suit my eyes?\". Salons absorb the \"it's not what I pictured\" complaints and the consultation time. Preset filters and in-chair consultation tools exist, but nothing lets you see a specific salon's real design on your own eyes before you visit.",
+        "After leaving kakaostyle I started building it alone, writing the code with Claude Code. The plan is to validate in Korea first, then Japan and Taiwan.",
+      ],
+      action: [
+        "**Set the order of validation.** Quality (does it look like my eyes?) → consumers (do they want it enough to turn on the camera?) → salons (will they attach the link and pay monthly?). If an earlier hypothesis fails, the later ones don't get built.",
+        "**Tested the quality hypothesis with spikes, not screens.** Built three rendering approaches side by side: parametric rendering, generative compositing, and transferring lash pixels from the reference photo. Replaced eyeballing with an automated vision-model judge (length, distribution, texture, density, realism, 1–5), and stopped generative models from redrawing the eye and skin by cropping one eye and moving only the lashes.",
+        "**Cut the MVP down to live-only.** The generative capture took 30–60 seconds and sent the whole face to a server; the live layer runs entirely in the phone's browser, so the face never leaves the device. Working through the privacy question made the choice clear, and the capture came out of the MVP.",
+        "**Designed the entry points and the revenue structure.** Retail lashes are free presets; another salon's design is limited to two tries a day, and at the limit the user can request that salon, which becomes a lead. Once a salon signs up, its customers get unlimited tries. Consumer traffic is the evidence for the B2B2C sale.",
+        "**Posted the build in public.** The first reel reached 1,600 views in 18 hours with no followers, and 64% of viewers were 25–34, so the audience was right. Saves and shares were zero, so the next cut opens on the result close-up in the first second.",
+      ],
+      results: [
+        { label: "Quality gate", value: "3 rendering approaches · automated vision-model scoring" },
+        { label: "Phase 0", value: "Classic design similarity 4.0/5 (target 3.5)" },
+        { label: "First reel", value: "1,600 views in 18h from zero followers" },
+        { label: "Now", value: "Live-only MVP · Korean first, tester feedback next" },
+      ],
+      resultsNote: "In progress.",
+      lesson: [
+        "With AI I could run research, code, scoring, and content on my own, but the decision that mattered most was still what to leave out. The generative capture was the part I had worked hardest on, and once privacy and perceived speed were on the table, live alone was enough. I now keep a weekly decision log, including the decisions I reversed and why.",
+      ],
+      media: [],
+    },
+    {
+      number: "02",
       title: "Repackaging Crowdfunding",
       period: "2019–2020",
       background: [
@@ -56,7 +83,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "02",
+      number: "03",
       title: "Public Bike App Usability",
       period: "2019–2020",
       background: [
@@ -101,6 +128,33 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   ko: [
     {
       number: "01",
+      title: "속눈썹 가상 체험 서비스",
+      period: "2026.09–진행 중",
+      background: [
+        "속눈썹 연장은 같은 디자인도 눈매에 따라 다르게 나옵니다. 소비자는 마음에 드는 디자인과 샵을 찾아두고도 \"내 눈에 어울릴까\"에서 멈추고, 샵은 \"생각과 다르다\"는 클레임과 상담 시간을 떠안습니다. 프리셋 필터나 원장용 상담 툴은 있지만, 방문 전에 그 샵의 실제 디자인을 내 눈에 입혀보는 서비스는 없었습니다.",
+        "퇴사 후 혼자, Claude Code로 코드를 쓰며 만들고 있습니다. 한국에서 먼저 검증하고 일본·대만으로 넓히는 계획입니다.",
+      ],
+      action: [
+        "**검증 순서를 정했습니다.** 품질(내 눈 같다고 납득되나) → 소비자(카메라를 켤 만큼 원하나) → 샵(링크를 붙이고 월 요금을 내나) 순서로, 앞 가설이 깨지면 뒤는 만들지 않기로 했습니다.",
+        "**품질 가설은 화면보다 스파이크로 먼저 검증했습니다.** 파라미터 렌더링, 생성형 합성, 레퍼런스 사진의 속눈썹 픽셀 이식 세 방식을 같이 만들어 비교했습니다. 눈대중 대신 비전 모델 자동 심사(길이·분포·질감·밀도·실제감 1~5점)로 결정했고, 생성 모델이 눈 모양과 피부까지 바꾸는 문제는 눈 한쪽만 잘라 속눈썹만 떼어 옮기는 구조로 막았습니다.",
+        "**MVP를 라이브 전용으로 줄였습니다.** 생성형 캡처는 30~60초가 걸리고 얼굴 전체가 서버로 갔습니다. 라이브는 폰 브라우저 안에서만 돌아 얼굴이 기기 밖으로 나가지 않습니다. 개인정보 질문에 답하다 이 구조가 낫다고 판단해 캡처를 MVP에서 뺐습니다.",
+        "**진입 구조와 수익 구조를 설계했습니다.** 시판 속눈썹은 무료 프리셋, 남의 샵 디자인은 하루 2회까지. 한도에 닿으면 '이 샵에 요청하기'로 샵 리드를 만들고, 샵이 가입하면 그 샵 고객은 무제한입니다. 소비자 트래픽이 샵 영업의 근거가 되는 B2B2C 구조입니다.",
+        "**만드는 과정을 콘텐츠로 올렸습니다.** 첫 릴스가 팔로워 없이 18시간 만에 1,600뷰, 시청자의 64%가 25~34세로 타깃은 맞았습니다. 저장·공유가 0이라 다음 편은 첫 1초를 결과 접사로 시작하도록 바꿨습니다.",
+      ],
+      results: [
+        { label: "품질 검증", value: "렌더링 3방식 비교 · 비전 모델 자동 채점" },
+        { label: "Phase 0", value: "클래식 디자인 유사도 4.0/5 (목표 3.5)" },
+        { label: "첫 릴스", value: "팔로워 0에서 18시간 1,600뷰" },
+        { label: "현재", value: "라이브 전용 MVP · 한국 먼저, 테스터 피드백 준비" },
+      ],
+      resultsNote: "진행 중인 프로젝트입니다.",
+      lesson: [
+        "AI 덕에 리서치·개발·채점·콘텐츠까지 혼자 돌릴 수 있었지만, 가장 중요한 결정은 여전히 '무엇을 뺄까'였습니다. 생성형 캡처는 가장 공들인 부분이었는데, 개인정보와 체감 속도를 놓고 보니 라이브만으로 충분했습니다. 지금은 매주 결정 로그를 남기고, 뒤집은 결정도 이유와 함께 적어둡니다.",
+      ],
+      media: [],
+    },
+    {
+      number: "02",
       title: "스타킹 리패키징 펀딩",
       period: "2019–2020",
       background: [
@@ -132,7 +186,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
       ],
     },
     {
-      number: "02",
+      number: "03",
       title: "공공자전거 앱 사용성 개선",
       period: "2019–2020",
       background: [
