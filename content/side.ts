@@ -3,21 +3,17 @@ import type { ZigzagCase } from "./types";
 
 export const sideHeader: Record<
   Locale,
-  { eyebrow: string; title: string; meta: string; intro: string }
+  { eyebrow: string; title: string; meta: string }
 > = {
   en: {
     eyebrow: "Personal",
     title: "Side Projects",
-    meta: "Planned and run on my own",
-    intro:
-      "Projects I took on outside of work: I picked the problem myself, met the people affected, and carried it through to a result.",
+    meta: "Projects where I defined the problem and ran it myself.",
   },
   ko: {
     eyebrow: "개인 프로젝트",
     title: "사이드 프로젝트",
-    meta: "직접 기획하고 실행한 프로젝트",
-    intro:
-      "회사 밖에서 직접 문제를 정하고, 사용자를 만나고, 결과까지 끌고 간 프로젝트입니다.",
+    meta: "직접 문제를 정의하고 실행했던 프로젝트입니다.",
   },
 };
 

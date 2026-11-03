@@ -40,7 +40,6 @@ export default async function SidePage({
         eyebrow={header.eyebrow}
         title={header.title}
         meta={header.meta}
-        intro={header.intro}
       />
 
       <CaseNav
