@@ -11,7 +11,7 @@ export type ZigzagCase = {
   resultsAsText?: boolean;
   lesson: string[];
   media: { src: string; alt: string; caption?: string }[];
-  /** One demo clip, shown after the images. */
+  /** One demo clip, shown above the background. */
   video?: { src: string; caption?: string };
   /** External coverage / write-ups about the project. */
   links?: { source: string; title: string; href: string }[];

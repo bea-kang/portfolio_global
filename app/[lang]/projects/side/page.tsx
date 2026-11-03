@@ -68,6 +68,7 @@ export default async function SidePage({
             </h2>
           </div>
 
+          {c.video && <CaseVideo video={c.video} />}
           <Section title={t.backgroundLabel} paragraphs={c.background} />
           <Section title={t.actionLabel} paragraphs={c.action} />
 
@@ -86,7 +87,6 @@ export default async function SidePage({
           </div>
 
           {c.media.length > 0 && <RefShots shots={c.media} />}
-          {c.video && <CaseVideo video={c.video} />}
 
           {c.links && (
             <RefLinks label={t.referencesLabel} links={c.links} />

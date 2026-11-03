@@ -21,7 +21,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   en: [
     {
       number: "01",
-      title: "Live AI Try-on for Beauty Salons (B2B2C)",
+      title: "B2B2C Live AI for Beauty Salons",
       period: "Oct 2026–Present",
       background: [
         "With lash extensions, the same design can turn out very differently from one customer to the next. So customers often drop off right before booking or change the design during the consultation, which adds consultation time and redo costs.",
@@ -123,7 +123,7 @@ export const sideCases: Record<Locale, ZigzagCase[]> = {
   ko: [
     {
       number: "01",
-      title: "B2B2C 뷰티샵 전용 Live AI 서비스",
+      title: "B2B2C 뷰티샵 Live AI",
       period: "2026.10–진행 중",
       background: [
         "속눈썹 연장은 고객에 따라 같은 디자인도 시술 결과 차이가 큽니다. 이에 예약 직전 이탈 또는 실제 상담시 디자인이 변경되는 경우가 많고, 상담 시간, 재시술 등 비용이 추가되는 구조입니다.",
