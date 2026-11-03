@@ -139,7 +139,7 @@ export default async function Home({
         <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
           {t.sideProjectsLabel}
         </h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {t.sideProjects.map((p) => (
             <ProjectCard
               key={p.href}
@@ -149,6 +149,7 @@ export default async function Home({
               period={p.period}
               blurb={p.blurb}
               cta={p.cta}
+              compact
             />
           ))}
         </div>
