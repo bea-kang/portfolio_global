@@ -35,7 +35,7 @@ export const home: Record<Locale, HomeContent> = {
     name: "Yebeen (Bea) Kang",
     intro:
       [
-        "Five years as a PM across a 7M MAU commerce platform, a new platform launch in France, and a B2B2C SaaS product. Lately I've been using AI to actively push out the boundary of what a single PM can cover. I want to work on products that stay connected to reality, and to widen the range of problems I can solve.",
+        "Five years as a PM across a 7M MAU commerce platform and a B2B2C research platform. I use AI to actively push out the boundary of what a single PM can cover, and I want to widen the scale of problems I can solve.",
       ],
     availability: "Based in Vancouver, Canada · Open to relocation",
     competencies: [
@@ -168,9 +168,8 @@ export const home: Record<Locale, HomeContent> = {
     name: "강예빈 (Bea Kang)",
     intro:
       [
-        "5년차 PM으로, 700만 MAU 커머스 플랫폼 및 프랑스 신규 플랫폼 런칭, B2B2C SaaS 플랫폼 업무 경험이 있습니다.",
-        "최근 AI를 통해 PM 1인이 커버할 수 있는 업무 경계를 적극적으로 확장하며 일하고 있습니다.",
-        "현실과 닿아있는 프로덕트를 다루면서, 해결할 수 있는 문제를 확장하고 싶습니다.",
+        "5년차 PM으로, 700만 MAU 커머스 및 B2B2C 리서치 플랫폼 업무 경험이 있습니다.",
+        "AI를 통해 PM 1인이 커버할 수 있는 업무 경계를 적극적으로 확장하며 일하고 있으며, 해결할 수 있는 문제의 스케일을 넓히고 싶습니다.",
       ],
     availability: "캐나다(밴쿠버) 거주 · 해외 이주 가능",
     competencies: [
