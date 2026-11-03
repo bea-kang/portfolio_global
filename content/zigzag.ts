@@ -8,7 +8,7 @@ export const zigzagHeader: Record<
   en: {
     eyebrow: "kakaostyle",
     title: "Zigzag: Commerce Platform",
-    meta: "Commerce Platform Planning / Product Owner · Jul 2022–Nov 2025",
+    meta: "Commerce Platform / Product Owner · Jul 2022–Nov 2025",
     intro:
       "Zigzag is kakaostyle's fashion commerce platform, serving 7M MAU in Korea. I ran user research continuously, defined product and KPI roadmaps, and owned iteration, the backlog, and project management.",
   },

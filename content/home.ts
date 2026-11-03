@@ -62,7 +62,7 @@ export const home: Record<Locale, HomeContent> = {
       },
       {
         org: "kakaostyle",
-        role: "Product Owner · Commerce Platform Planning",
+        role: "Product Owner · Commerce Platform",
         period: "Jul 2022–Nov 2025",
       },
       {
