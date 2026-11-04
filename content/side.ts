@@ -12,7 +12,7 @@ export const sideHeader: Record<
   },
   ko: {
     eyebrow: "개인 프로젝트",
-    title: "사이드 프로젝트",
+    title: "Side Projects",
     meta: "직접 문제를 정의하고 실행했던 프로젝트입니다.",
   },
 };

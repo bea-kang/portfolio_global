@@ -22,7 +22,7 @@ export async function generateMetadata({
 }: PageProps<"/[lang]/projects/side">): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
-  return { title: `${lang === "ko" ? "사이드 프로젝트" : "Side Projects"} | ${lang === "ko" ? "강예빈" : "Yebeen (Bea) Kang"}` };
+  return { title: `Side Projects | ${lang === "ko" ? "강예빈" : "Yebeen (Bea) Kang"}` };
 }
 
 export default async function SidePage({

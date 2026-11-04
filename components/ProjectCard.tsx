@@ -70,6 +70,28 @@ export function ProjectCard({
     );
   }
 
+  if (!image) {
+    return (
+      <Link
+        href={href}
+        className="group grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-6 gap-y-2 rounded-2xl border border-neutral-200 px-6 py-5 transition-colors hover:border-neutral-950 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_auto] sm:gap-x-12 sm:px-8"
+      >
+        <div>
+          <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+            {eyebrow} · {period}
+          </p>
+          <h3 className="mt-1 text-2xl font-semibold tracking-tight">{title}</h3>
+        </div>
+        <p className="col-start-1 text-neutral-600 sm:col-start-auto">{blurb}</p>
+        {/* Arrow only; the CTA wording stays for screen readers. */}
+        <span className="col-start-2 row-span-2 row-start-1 text-xl text-neutral-400 transition group-hover:translate-x-1 group-hover:text-neutral-950 sm:col-start-auto sm:row-span-1 print:hidden">
+          <span aria-hidden>→</span>
+          <span className="sr-only">{cta}</span>
+        </span>
+      </Link>
+    );
+  }
+
   return (
     <Link
       href={href}

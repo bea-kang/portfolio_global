@@ -238,7 +238,7 @@ export const home: Record<Locale, HomeContent> = {
       },
     ],
     projectsLabel: "프로젝트",
-    sideProjectsLabel: "사이드 프로젝트",
+    sideProjectsLabel: "Side Projects",
     sideProjects: [
       {
         href: "/projects/side#case-01",
